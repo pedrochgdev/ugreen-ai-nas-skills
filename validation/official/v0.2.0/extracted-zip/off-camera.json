@@ -1,0 +1,46 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "off-camera"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/capability-map.md",
+      "sha256": "f61dd5a38290967f103e3cb25a959cb83ed3cb9ead3c33f656837001bb628660"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "cfca4f44a3e27f5d25e54c294569ff04f5b0e44b4a133137537d69f899458b4f"
+    },
+    {
+      "path": "references/execution-policy.md",
+      "sha256": "879f5b4cd4246a1a4934928250bc67fb108ee7705c1d5dd0b8e3cf8392643c23"
+    },
+    {
+      "path": "references/result-format.md",
+      "sha256": "6bb2414952d278283102c5e8983cfa24e1800118f2274da15d4789c91f278d4b"
+    },
+    {
+      "path": "references/validation-plan.md",
+      "sha256": "0d1a92a771634d9a920316d02103c4aceeaa517f5e869fce8dc7c62080fb4c56"
+    },
+    {
+      "path": "references/workflow-contract.md",
+      "sha256": "00c4c79681a0d9ba1ee48ea61fb3974f17bbb16a5d9384a7b9574ea7f89938ad"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "bba656051a96f0d94c0f46b766bf9371dac70552821a24da4c6c587d3b45ce32"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

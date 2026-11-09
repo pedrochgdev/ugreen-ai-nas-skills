@@ -28,11 +28,11 @@ File discovery establishes run sources; document extraction and reconciliation r
 
 ## 7. Technical approach
 
-A Markdown parent delegates to file, document and knowledge experts with actual source results. Inputs include run identities, shared context, variables, units and explicit tolerances. CLI bindings need official-kit verification. Confirm model routing before private reads; prefer verified local processing. No equipment control, external API or custom runtime is bundled. Codex assisted development.
+The parent delegates ug-filesystem inventory/verification to file-agent, ug-document qa/reconcile to document-agent, and ug-knowledge transcription/save-text to knowledge-agent. Inputs specify runs, context, variables, units and tolerances. Verify routing before private reads; prefer local processing. Separate approval precedes writes. No equipment control or external API is included. Codex assisted development.
 
 ## 8. Current development status
 
-Implemented: workflow, comparison rules, references, synthetic run records, HTML concept demo, proposal and local package checks. Official-tool use and validation remain blocked by download access. NAS execution, extraction, approvals and model routing are untested; entrant review is pending.
+Implemented: original Markdown workflow, references, synthetic fixtures, concept demo, proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to reconcile authoring; official static reports accompany the release. NAS installation, execution, extraction accuracy and model routing remain untested. Entrant review is pending.
 
 ## 9. Final validation plan
 
@@ -42,7 +42,7 @@ Core one: identify temperature and lot changes while keeping missing humidity un
 
 Incomplete records and extraction errors limit findings. Comparable differences do not establish causality. Unit mappings require explicit support, and the workflow does not prescribe machine settings or certify an experiment.
 
-Substantive response count: 276 words.
+Substantive response count: 285 words.
 
 ## Third-party information
 

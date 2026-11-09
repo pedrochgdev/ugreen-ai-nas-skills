@@ -5,69 +5,70 @@
     "tacit": {
       "package": {
         "files": 7,
-        "source_bytes": 21048,
-        "zip_bytes": 11150,
-        "zip_sha256": "47951f57f0d442193319ec92df06ac6599d19f848ac53c20802ad4b04fe47fc2",
-        "entry_sha256": "2ee7d60a14f105c7962285c9493955f5bd97b2f63184c35355219e2ce1a61b93"
+        "source_bytes": 24737,
+        "zip_bytes": 12416,
+        "zip_sha256": "a3ea6d8a13bf2e342c6b0425df98ff9f5db6f304cf9d2abecd446976a6eea549",
+        "entry_sha256": "793bca5f3d5bd81a8d24a61c01ceae319dfef38e4803f45949b02cddab9d20d4"
       },
       "proposal": {
-        "substantive_words": 272,
+        "substantive_words": 289,
         "pdf_pages": 2,
-        "pdf_bytes": 7024,
-        "pdf_sha256": "b9ea97e926ef77ed0e1888105e9381e318e4153590b4d2f77abd5d452b935052"
+        "pdf_bytes": 7203,
+        "pdf_sha256": "72d0ddbe7067b54fc12627dda25ed725e359d3ea0e07f8c2b6536e912c7abbd0"
       }
     },
     "off-camera": {
       "package": {
         "files": 7,
-        "source_bytes": 21929,
-        "zip_bytes": 11490,
-        "zip_sha256": "5a5c82e92afe4585f893855ffde858a80c271eda06e6d3a45d2767e62ad5cd60",
-        "entry_sha256": "76caf0e5d6500f5ac7d8d7df30a714ad09aecd5873d096ac2acffe29414911fc"
+        "source_bytes": 26845,
+        "zip_bytes": 13126,
+        "zip_sha256": "c99a4f727c2b43bdd61fa7daea903d6b97da3dde4f721970728ec1ddc99ed80b",
+        "entry_sha256": "bba656051a96f0d94c0f46b766bf9371dac70552821a24da4c6c587d3b45ce32"
       },
       "proposal": {
-        "substantive_words": 290,
+        "substantive_words": 305,
         "pdf_pages": 2,
-        "pdf_bytes": 7130,
-        "pdf_sha256": "81d60d102ff49d04d4df370abdf2224abc0603e5c0b61df1f2c9344edcbf32b2"
+        "pdf_bytes": 7279,
+        "pdf_sha256": "96937c2466bd4060e1b1f0833e15380c5a1d710c6d0abb277fa31f6e590137d9"
       }
     },
     "contextcut": {
       "package": {
         "files": 7,
-        "source_bytes": 22480,
-        "zip_bytes": 11789,
-        "zip_sha256": "bfe4ec7511c36fb28f86a68d1928ee18de4e91b5c2ebd3c217e2be8b1aeec495",
-        "entry_sha256": "160f64c2deb921ad9ab8f109982174bb4d37da8d82d6953cb6781c2028383621"
+        "source_bytes": 26188,
+        "zip_bytes": 13064,
+        "zip_sha256": "286e0eb54ab9cc979d008c9a845f82f99919f2608984bdd71cd83e4b64ce690b",
+        "entry_sha256": "bce8b5c59a9acf09c7983dcaf35c1da60f92ac75fbc8e078fcaba09b9c6fe010"
       },
       "proposal": {
-        "substantive_words": 274,
+        "substantive_words": 289,
         "pdf_pages": 2,
-        "pdf_bytes": 7045,
-        "pdf_sha256": "64b9aecba3ee3ff66219bb573adc44ceb63b799804920256d9346984e30876f6"
+        "pdf_bytes": 7229,
+        "pdf_sha256": "d87da7634dec210a0c001937482fca917129e53231bbea31a65258595fd133b5"
       }
     },
     "benchmatch": {
       "package": {
         "files": 7,
-        "source_bytes": 21133,
-        "zip_bytes": 11328,
-        "zip_sha256": "7ec5f5264ed35107328f847352c1c6d67714f659b0ff60cbc4fc21dac21d3fc4",
-        "entry_sha256": "481c3a690b5b8c4f8bbed544262df1bd1ec0926065af9b493d6122310e66bbe4"
+        "source_bytes": 24848,
+        "zip_bytes": 12591,
+        "zip_sha256": "a79aab6542ab70ca3c83d12bf65c4d317c450718262a118bf6d4ff1d70a9f8d3",
+        "entry_sha256": "92938e36b2bc314c308f0de25752b70c6c7a1db2d343c1283b139c5b56e9e830"
       },
       "proposal": {
-        "substantive_words": 276,
+        "substantive_words": 285,
         "pdf_pages": 2,
-        "pdf_bytes": 7011,
-        "pdf_sha256": "567789380503952f9af7b6f381cbba0e83a4afb283aeb48a4f2b9c37e33647c9"
+        "pdf_bytes": 7146,
+        "pdf_sha256": "c79a7260b1905f00ca5c01d00d9ab909265e94084f2e130f53ac08befd6065ac"
       }
     }
   },
-  "local_markdown_links_checked": 112,
+  "local_markdown_links_checked": 128,
   "archived_concepts": "exactly README.md and demo.html",
-  "official_creation_tool": "not used; archive download unavailable",
-  "official_catalog_bindings": "proposed; verification pending",
-  "official_checker": "not run",
+  "release": "0.2.0",
+  "official_creation_tool": "supplied toolkit 0.7.3 used for authoring",
+  "official_catalog_bindings": "checked against catalog 2.0.0",
+  "official_checker": "static-pass, zero diagnostics; source and extracted ZIP hashes verified",
   "nas_runtime": "not run",
   "remote_publication": "not verified"
 }

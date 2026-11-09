@@ -18,10 +18,10 @@
     "Identify comparable runs and variables; authorize sources; inspect differences and unknowns; add or clarify a note; approve the report.",
     "The workflow preserves variable-level uncertainty and run identity instead of turning a plausible explanation into an unsupported cause.",
     "File discovery establishes run sources; document extraction and reconciliation recover values and units; optional supported transcription adds a note; approved text saving preserves the comparison.",
-    "A Markdown parent delegates to file, document and knowledge experts with actual source results. Inputs include run identities, shared context, variables, units and explicit tolerances. CLI bindings need official-kit verification. Confirm model routing before private reads; prefer verified local processing. No equipment control, external API or custom runtime is bundled. Codex assisted development.",
-    "Implemented: workflow, comparison rules, references, synthetic run records, HTML concept demo, proposal and local package checks. Official-tool use and validation remain blocked by download access. NAS execution, extraction, approvals and model routing are untested; entrant review is pending.",
+    "The parent delegates ug-filesystem inventory/verification to file-agent, ug-document qa/reconcile to document-agent, and ug-knowledge transcription/save-text to knowledge-agent. Inputs specify runs, context, variables, units and tolerances. Verify routing before private reads; prefer local processing. Separate approval precedes writes. No equipment control or external API is included. Codex assisted development.",
+    "Implemented: original Markdown workflow, references, synthetic fixtures, concept demo, proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to reconcile authoring; official static reports accompany the release. NAS installation, execution, extraction accuracy and model routing remain untested. Entrant review is pending.",
     "Core one: identify temperature and lot changes while keeping missing humidity unknown. Core two: incorporate a run-linked humidity note and retain conflicting temperatures. Edge: incompatible units or unresolved run identity must prevent an unjustified comparison.",
     "Incomplete records and extraction errors limit findings. Comparable differences do not establish causality. Unit mappings require explicit support, and the workflow does not prescribe machine settings or certify an experiment."
   ],
-  "word_count": 276
+  "word_count": 285
 }

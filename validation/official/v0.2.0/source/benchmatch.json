@@ -1,0 +1,46 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "benchmatch"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/capability-map.md",
+      "sha256": "ac66a9214707e5d22ee21016ad2fefb44d46169cec94bb6735fa6fcf9f151486"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "cfca4f44a3e27f5d25e54c294569ff04f5b0e44b4a133137537d69f899458b4f"
+    },
+    {
+      "path": "references/execution-policy.md",
+      "sha256": "879f5b4cd4246a1a4934928250bc67fb108ee7705c1d5dd0b8e3cf8392643c23"
+    },
+    {
+      "path": "references/result-format.md",
+      "sha256": "0b8063fb1aa587db4f023c937dc0e6888f0c3d23f947205933485eac221c272d"
+    },
+    {
+      "path": "references/validation-plan.md",
+      "sha256": "138ba9e91a95b3d7b5950854c3c0116d8f71ce3b0d5ffa0ff5aa3896b404036a"
+    },
+    {
+      "path": "references/workflow-contract.md",
+      "sha256": "4f42cde8e48de0128d8a56bde8f0805489a3c39dab9c34b6718b4547cfa20ed5"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "92938e36b2bc314c308f0de25752b70c6c7a1db2d343c1283b139c5b56e9e830"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

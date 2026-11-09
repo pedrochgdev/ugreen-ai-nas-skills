@@ -6,35 +6,33 @@ Only one project may be submitted by an entrant/team. Keep the other alternative
 as research or concepts. The source repository itself is not a required Round 1
 deliverable and is not a Skill ZIP.
 
-## Required official-tool gate
+## Official authoring and static validation completed
 
-1. Obtain the official tool from the [Starter Kit](https://ai.ugreen.com/pages/hackathon-starter-kit).
-2. Read its own instructions and the included Uliya development standard. Use that
-   official creation tool to reconcile and refine the selected original Skill.
-3. Check every proposed CLI, action, registered expert, argument/output schema,
-   input format, approval policy and state effect against the actual catalog.
-   Review exact-selection album semantics before enabling Off Camera album creation.
-4. Replace provisional bindings with the actual verified contracts and update the
-   capability evidence and proposal status truthfully. Do not remove the release
-   gate just to make a local check pass.
-5. Run the actual official checker on the source Skill folder and an independent
-   extraction of its ZIP. Record real versions, diagnostics and result. Resolve
-   required issues before treating the candidate as submission-ready.
-6. Rebuild the proposal and ZIP and rerun the repository checks. Entrant review
-   of all AI-assisted text and applicable rights remains necessary.
+Release 0.2.0 uses the user-supplied UGOS toolkit 0.7.3 and its Uliya standard and
+catalog 2.0.0. CLI/action/expert mappings and relevant argument/output contracts
+were reconciled with the actual catalog. The actual checker reports static-pass,
+zero diagnostics on each source folder and each independent ZIP extraction.
+See [raw reports and provenance](validation/official/README.md).
 
-When the downloaded kit exposes scripts/check-skill.mjs, an example command is:
+Reproduce with a separate copy of the official toolkit:
 
 ~~~sh
-node /path/to/official/uliya-skill-kit/scripts/check-skill.mjs products/contextcut/skill/contextcut
+python3 tools/build_candidates.py --kit /path/to/uliya-skill-kit
+python3 tools/validate_repository.py
 ~~~
 
-Use the command actually documented by the downloaded version. This repository
-does not redistribute the official kit or recreate its checker.
+The builder runs scripts/check-skill.mjs from that toolkit; this repository does
+not redistribute or recreate the checker. It preserves immutable release files.
+Revisions require a new version, regenerated PDF/ZIP files and fresh actual
+checker reports. Static success does not resolve catalog properties marked
+unknown or establish assigned-device behavior. Entrant review of AI-assisted
+text, rights, eligibility and declarations remains necessary before submission.
 
 ## Round 1 artifacts
 
-For the single chosen product, provide the separate files in deliverables/:
+For the single chosen product, use its separate files in deliverables/PRODUCT/v0.2.0/,
+linked from the [main README](README.md). Unversioned files are historical
+provisional artifacts and should not be selected instead:
 
 - The English proposal PDF, at most 1 MB. It answers all ten required questions;
   substantive answers stay under 500 words in total.
@@ -51,6 +49,10 @@ November 15, 2026, 11:45 p.m. PST; verify the event page before submitting.
 
 Use the assigned testing day for supported installation, exact expert round trips,
 input compatibility, routing, permissions, error handling and real results.
+Confirm save-text's actual returned path, independent text readback and whether
+the expert can guarantee no replacement; otherwise retain preview-only output.
+For Off Camera, verify exact add-item binding and complete member enumeration
+scoped to the returned album identity before claiming exact album creation.
 Run the two core tests and edge case documented by the selected product.
 Record actual English narration/subtitles and NAS footage in a video under
 three minutes, uploaded publicly to YouTube as required by the rules.

@@ -25,4 +25,37 @@ The same independent reviewer re-read the two revised instruction sections and
 confirmed both ambiguities resolved. It made no new runtime or official-tool
 claim. The corrected fill rule and edit-alignment rule are included in the
 regenerated Skill ZIPs. Development policy tests remain distinct from this paper
-review and from the unperformed official validation.
+review and from official validation, which had not yet been performed at that stage.
+
+## Official-kit integration review: release 0.2.0
+
+The supplied toolkit 0.7.3, development standard and actual catalog 2.0.0 were
+subsequently read and used. A second independent paper review compared the four
+updated Skills, their references and fictional raw artifacts against the relevant
+catalog actions. It made no file edits or NAS calls and found no material
+integration defect.
+
+- Tacit keeps the supervisor requirement and urgent bypass as conflicting claims;
+  the contested step stays outside teach-back until resolved.
+- Off Camera's documented priority order gives F05, F04, F06, F02, with two
+  appearances per person, only if unknown capture timing is permitted. Replacing
+  F02 with F08 changes counts to 2, 1, 3, 2 and requires renewed approval. These
+  are fictional identities without device date/path evidence.
+- ContextCut identifies the lost qualification and source-anchored negation
+  deletion without calling the changed quotation EXACT. Ambiguous source
+  attribution remains UNVERIFIED.
+- BenchMatch leaves humidity UNKNOWN until linked evidence supplies 45 percent;
+  the two B temperature claims remain CONFLICTING without averaging or causality.
+
+The integration review confirmed free-form extraction via qa, saving through an
+output directory with the actual returned outputFile and verified field, and
+stopping optional saves if replacement cannot be prevented. Exact album creation
+requires actual add-item binding and member enumeration through search-picture
+scoped to returned album_uuid. Neither create-album-custom nor album-detail alone
+is treated as proof of exact membership.
+
+The actual official checker separately reports static-pass with zero errors,
+warnings or informational diagnostics for all four source folders and independent
+ZIP extractions. [Raw evidence](official/README.md) includes per-file hashes.
+Neither review establishes device format support, locality, live permissions,
+extraction quality, collision handling or complete album readback on the NAS.

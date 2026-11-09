@@ -1,6 +1,7 @@
 {
   "checker": "Codex skill-creator generic frontmatter validator",
-  "scope": "Generic metadata only; not the UGREEN checker",
+  "scope": "Generic metadata only; distinct from the actual UGREEN checker",
+  "release": "0.2.0",
   "checker_sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
   "result": "passed",
   "products": {

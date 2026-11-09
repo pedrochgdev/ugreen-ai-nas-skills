@@ -1,0 +1,62 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass-needs-target-validation",
+  "target": {
+    "skillName": "contextcut"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/capability-map.md",
+      "sha256": "4e4acea0a275810b770fb5d10a471eb6f1aa5ab58265e471282395fd41331fee"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "af09ac1fceaba039c30e4d945b4b541d3824f8908feafd949facb0ad4023925f"
+    },
+    {
+      "path": "references/execution-policy.md",
+      "sha256": "fe9b77ddda8db47b55b1d3b88b5fa755991867fda951eff67a3c373c03937954"
+    },
+    {
+      "path": "references/result-format.md",
+      "sha256": "02a819d667fff8af7f0fd0dc41eeccf2d06dabe641c1e7eebc88254f3cef73ba"
+    },
+    {
+      "path": "references/validation-plan.md",
+      "sha256": "852850e68ca1d9d64590336247b1195a85521324db26af4e45b5bd72f8ca8d2c"
+    },
+    {
+      "path": "references/workflow-contract.md",
+      "sha256": "97c8b1cd53f0a594fef245cde0e4cb10139e53d16ae4284ed3b74b86d658d549"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "160f64c2deb921ad9ab8f109982174bb4d37da8d82d6953cb6781c2028383621"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 2,
+    "info": 0
+  },
+  "diagnostics": [
+    {
+      "code": "DESCRIPTION_TRIGGER_MISSING",
+      "severity": "warning",
+      "file": "SKILL.md",
+      "line": 3,
+      "message": "description 没有明确说明用户触发场景。",
+      "suggestion": "补充用户实际会说的触发表达，同时保持 description 只承担索引作用。"
+    },
+    {
+      "code": "DELEGATION_WORKFLOW_STATIC_VALIDATION_INCOMPLETE",
+      "severity": "warning",
+      "file": "SKILL.md",
+      "message": "正文中没有可机械识别的标准 delegate 命令。",
+      "suggestion": "人工确认该 Skill 是否无需 NAS 专家；需要时补充标准 delegate 命令。"
+    }
+  ]
+}

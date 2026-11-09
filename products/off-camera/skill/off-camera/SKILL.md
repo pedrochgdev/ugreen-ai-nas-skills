@@ -1,6 +1,6 @@
 ---
 name: off-camera
-description: "Prepare a source-linked photo selection that represents user-chosen people and moments, including a family photographer who appears rarely. Review exact assets and coverage before saving a report or conditionally creating an album."
+description: "Reviewed family-photo selections with explicit person coverage when a user wants the family photographer or other chosen people represented."
 ---
 
 # Goal
@@ -11,32 +11,30 @@ Use when the user asks: "Choose four memories from our trip, including Ana, who 
 
 # Required input
 
-Exact authorized photo scope and date window; user-confirmed people identifiers or manually identified candidate assets; requested selection size; optional user-defined event labels; optional new report path and album title. Do not infer a person from an unconfirmed face.
+Exact authorized photo scope and date window; user-confirmed people names, or manually identified candidate assets; let photo-agent resolve actual typed identities; requested selection size; optional user-defined event labels; optional new report path and album title. Do not infer a person from an unconfirmed face.
 
 Bounds: One authorized folder or album; 2 to 8 user-confirmed people; 4 to 12 requested photos; at most 60 distinct candidate assets and 24 scoped search queries per invocation.
 
-Do not treat the illustrative HTML demo or its fictional identifiers as NAS inputs.
+Fictional demo records are not NAS inputs. Experts resolve their own private
+options from the user's business goal; do not request hidden parameters upfront.
 
 # Generation-time capability evidence
 
-This is an authored candidate. The public Starter Kit was read; the required
-official creation tool could not be downloaded, installed or run. Before this
-candidate is submitted or installed, the developer must resolve the release gate
-in [Capability binding and evidence](references/capability-map.md).
+Authoring uses the supplied official UGOS Skill Creation Tool 0.7.3 and catalog
+2.0.0. The declared unique mappings and selected actions were read from that
+catalog. See [Capability evidence](references/capability-map.md) for exact actions,
+effects, approval and limitations. This evidence does not prove NAS execution.
 
-- `ug-photo` → `photo-agent`: proposed binding; official-catalog verification pending.
-- `ug-filesystem` → `file-agent`: proposed binding; official-catalog verification pending.
-- `ug-knowledge` → `knowledge-agent`: proposed binding; official-catalog verification pending.
-
-No exact CLI/action support, official checker result, local model availability or
-NAS runtime success is claimed. Follow the verified catalog after that gate;
-an unresolved operation must stop, not be replaced with a script or guessed CLI.
+- `ug-filesystem` → `file-agent`
+- `ug-photo` → `photo-agent`
+- `ug-knowledge` → `knowledge-agent`
 
 # Orchestration
 
-Read [Execution policy](references/execution-policy.md) for scopes, evidence,
-expert delegation, model routing, state transitions, freshness and write approval.
-All NAS operations are delegated; the parent only reasons over real returned data.
+Read [Execution policy](references/execution-policy.md) for authorization, model
+routing, evidence, all delegation states, freshness, collisions and verification.
+The parent uses only standard delegation for NAS work and reasons over real
+upstream business results. Never dispatch incomplete or unresolved instructions.
 
 1. Confirm people, source scope, date window, requested count and processing
 route. Ask for confirmation of any ambiguous person identifier. Person labels
@@ -68,8 +66,8 @@ Do not infer a family relationship, mood, health condition or protected attribut
 the separate approved create-only save/readback procedure. A declined save leaves
 the preview available without writing.
 
-7. Offer album creation only if the installed catalog and photo expert can
-demonstrably preserve the exact approved typed asset IDs, ordering when required
+7. Offer album creation only if the photo expert can
+demonstrably preserve the exact approved typed asset IDs using the documented repeatable add-item capability, ordering when required
 and collision policy. The user must separately approve the exact membership and
 title, and the platform must authorize creation. A generic search-based album is
 not an acceptable substitute for the reviewed selection.
@@ -81,18 +79,70 @@ unavailable and keep the reviewed selection report. Unknown write completion
 requires inspection before any retry; do not create a duplicate album.
 
 
-Read [Workflow contract](references/workflow-contract.md) when deriving the result,
-and use [Result format](references/result-format.md) for the complete reviewed output.
+Catalog-specific album boundary: create-album-custom accepts an album name but
+has no explicit item-selection parameter in this catalog. It is not a substitute
+for exact membership. Use the registered photo expert with create-album only if
+it can bind the approved typed assets to the actual add-item contract. Verify
+members through search-picture scoped to the returned album_uuid; album-detail
+alone promises album/people details, not a complete typed member list. If exact
+binding or membership readback is unavailable, keep the reviewed report and say
+the album was not created or its membership remains unverified.
+
+
+## Standard expert delegations
+
+Use the following tasks at the corresponding workflow stages, not as one
+unconditional sequence. Uppercase bindings name actual business values.
+SOURCE_SCOPE and limits come from the user; paths, source identities and
+typed asset IDs come only from completed upstream results. APPROVED_REPORT,
+OUTPUT_DIRECTORY, FILENAME_HINT and album choices require current consent.
+VERIFIED_OUTPUTFILE and VERIFIED_ALBUM_UUID come only from real successful
+expert responses. Replace every named binding with the full actual value
+inside each instruction before dispatch; a missing value stops its step.
+Preserve all quoting as one supported delegation argument. Do not send
+binding names literally or rely on shared expert memory.
+
+### Source verification
+
+`delegate --target file-agent --instruction 'Inspect only the authorized SOURCE_SCOPE for SOURCE_SELECTION. Preserve the selected entities and limits in RUN_LIMITS. Return actual paths, file kinds, identity metadata, readable coverage and bounded plain text when appropriate. Keep read-only; if no results are found return an empty result without widening scope.'`
+
+### Photo evidence
+
+`delegate --target photo-agent --instruction 'Within PHOTO_SCOPE and PERIOD resolve the user confirmed PEOPLE without guessing identities. Return at most CANDIDATE_LIMIT real typed assets, capture-time status, confirmed person matches, available moment labels and coverage. Use only verified scope; an empty result stops this branch. Return ambiguity for user review.'`
+
+### Freshness and collision review
+
+`delegate --target file-agent --instruction 'Recheck only SOURCE_IDENTITIES and the authorized OUTPUT_DIRECTORY for the reviewed FILENAME_HINT. Return actual source fingerprints or metadata and any collision evidence. Keep read-only. Report changed or unverifiable inputs explicitly; do not authorize an overwrite or infer exclusive-create behavior.'`
+
+### Separately approved save
+
+`delegate --target knowledge-agent --instruction 'After the explicit user approval for APPROVED_REPORT and OUTPUT_DIRECTORY with FILENAME_HINT, save only that exact text through the approved workflow. Never replace an existing report. If no-replacement cannot be enforced stop without writing. Return completed state and actual verified, outputFile and contentBytes or a truthful pending, partial or failure result.'`
+
+### Independent readback
+
+`delegate --target file-agent --instruction 'Read only the actual VERIFIED_OUTPUTFILE returned by the completed save within OUTPUT_DIRECTORY. Return the complete saved text and identity evidence for comparison with APPROVED_REPORT. Do not write or broaden scope. An unreadable or partial result means readback is incomplete.'`
+
+### Optional separately approved album
+
+`delegate --target photo-agent --instruction 'After the separate user approval of APPROVED_TYPED_ASSETS and ALBUM_TITLE, create only that exact set through supported album creation if item binding and no-replacement can be honored. Stop on unsupported or ambiguous membership. Return actual album_uuid and completion state. Never substitute a search-based set.'`
+
+### Album membership inspection
+
+`delegate --target photo-agent --instruction 'Inspect only VERIFIED_ALBUM_UUID returned by the completed creation. Return actual typed member identities and coverage through a scoped supported photo query. Keep read-only. If membership cannot be enumerated completely report verification incomplete rather than claiming an exact match.'`
+
+
+Read [Workflow contract](references/workflow-contract.md) for the domain rules.
+Use [Result format](references/result-format.md) for the complete reviewed output.
 
 # Completion and failure
 
-Handle completed, failed, cancelled, waiting_user and waiting_approval exactly as
-defined in the execution policy. A partial preview is labeled partial. Empty,
-unreadable or unsupported inputs never become inferred evidence. Changing an input
-or decision invalidates the affected preview and any previous write approval.
-Report preview, user decisions, actual writes and readback as separate outcomes.
-Never claim a planned or unverified operation completed.
+Handle completed, failed, cancelled, waiting_user and waiting_approval as distinct
+states. Only a completed expert result supports dependent operations. If no
+results are found, state the empty result and stop that branch without widening
+scope or substituting another source. Preserve useful partial results with their
+limitations. A changed source, goal or decision invalidates affected approval.
+Report preview, each actual write and readback as separate outcomes.
 
-The developer uses [Validation plan](references/validation-plan.md) for the two
-core cases, edge case and assigned NAS session. Source, license, tool and runtime
-disclosures are in [Disclosures](references/disclosures.md).
+Use [Validation plan](references/validation-plan.md) for core cases, edge case
+and assigned-device testing. Read [Disclosures](references/disclosures.md) for
+rights, sources, AI assistance and the distinction between static and NAS checks.

@@ -28,11 +28,11 @@ File discovery establishes scope; document reading and reconciliation extract pr
 
 ## 7. Technical approach
 
-A Markdown parent delegates to file, document and knowledge experts using actual upstream results. Proposed CLI bindings require official-kit verification. Inputs include process, scope, authority and learner. Confirm model routing before private reads; prefer a verified local route. Writes need separate approval. Codex assisted authoring and checks.
+The Markdown parent delegates ug-filesystem work to file-agent, ug-document qa/reconcile to document-agent, and ug-knowledge transcription/save-text to knowledge-agent. Real upstream evidence drives each step. Inputs specify process, scope, authority and learner. Verify model routing before private reads; prefer local processing. Writes require separate approval. Codex assisted development.
 
 ## 8. Current development status
 
-Implemented: workflow, references, synthetic fixtures, HTML concept demo, proposal and local packaging checks. Official-tool use and validation remain blocked by download access; NAS installation, execution and extraction quality are untested. Entrant review remains pending.
+Implemented: original Markdown workflow, references, synthetic fixtures, concept demo, proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to reconcile authoring; official static reports accompany the release. NAS installation, execution, extraction accuracy and model routing remain untested. Entrant review is pending.
 
 ## 9. Final validation plan
 
@@ -42,7 +42,7 @@ Core one: recover missing approver and tolerance without inventing either. Core 
 
 Depends on supported experts, readable sources and confirmed model routing. Transcription may misread important words; a handover report does not certify practical competence. No custom runtime or external API is bundled.
 
-Substantive response count: 272 words.
+Substantive response count: 289 words.
 
 ## Third-party information
 

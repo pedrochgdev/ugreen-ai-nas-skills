@@ -1,0 +1,46 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass",
+  "target": {
+    "skillName": "contextcut"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/capability-map.md",
+      "sha256": "ac66a9214707e5d22ee21016ad2fefb44d46169cec94bb6735fa6fcf9f151486"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "cfca4f44a3e27f5d25e54c294569ff04f5b0e44b4a133137537d69f899458b4f"
+    },
+    {
+      "path": "references/execution-policy.md",
+      "sha256": "879f5b4cd4246a1a4934928250bc67fb108ee7705c1d5dd0b8e3cf8392643c23"
+    },
+    {
+      "path": "references/result-format.md",
+      "sha256": "02a819d667fff8af7f0fd0dc41eeccf2d06dabe641c1e7eebc88254f3cef73ba"
+    },
+    {
+      "path": "references/validation-plan.md",
+      "sha256": "852850e68ca1d9d64590336247b1195a85521324db26af4e45b5bd72f8ca8d2c"
+    },
+    {
+      "path": "references/workflow-contract.md",
+      "sha256": "97c8b1cd53f0a594fef245cde0e4cb10139e53d16ae4284ed3b74b86d658d549"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "bce8b5c59a9acf09c7983dcaf35c1da60f92ac75fbc8e078fcaba09b9c6fe010"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 0
+  },
+  "diagnostics": []
+}

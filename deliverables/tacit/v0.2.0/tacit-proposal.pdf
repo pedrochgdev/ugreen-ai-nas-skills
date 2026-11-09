@@ -1,0 +1,100 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 2188 >>
+stream
+0.09 0.30 0.23 rg 0 830 595 12 re f
+BT /F2 23 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 788 Tm (Tacit / Round 1 proposal) Tj ET
+BT /F1 11 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 765 Tm (Automate Your Workflow) Tj ET
+BT /F1 8.8 Tf 0.45 0.30 0.08 rg 1 0 0 1 46 743 Tm (Official static validation passed - assigned NAS execution pending) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 714 Tm (1. What does the Skill do?) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 700 Tm (Tacit turns an authorized expert explanation and operating documents into a traceable) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 686 Tm (handover procedure, clarification queue and teach-back exercise.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 659 Tm (2. Target user and problem) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 645 Tm (Small workshops and teams lose practical knowledge when experienced staff are absent;) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 631 Tm (recordings and procedures often omit owners, exceptions and decision rules.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 604 Tm (3. Proposed solution) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 590 Tm (Reconcile documented steps with an optional recording, retain disagreements, ask precise) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 576 Tm (missing-fact questions and build source-backed learning checks.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 549 Tm (4. Core user flow) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 535 Tm (Choose process and sources; authorize processing; review evidence and questions; answer) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 521 Tm (or skip; try the exercise; approve a new report.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 494 Tm (5. Substantive difference) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 480 Tm (Tacit operationalizes gaps in tacit knowledge: unresolved conditions remain visible and) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 466 Tm (cannot silently become instructions or correct quiz answers.) Tj ET
+BT /F1 8.2 Tf 0.35 0.42 0.38 rg 1 0 0 1 46 35 Tm (Substantive responses: 289 words | 2026-11-09 | 1/2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4071 >>
+stream
+0.09 0.30 0.23 rg 0 830 595 12 re f
+BT /F2 23 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 788 Tm (Tacit / Round 1 proposal) Tj ET
+BT /F1 11 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 765 Tm (Automate Your Workflow) Tj ET
+BT /F1 8.8 Tf 0.45 0.30 0.08 rg 1 0 0 1 46 743 Tm (Official static validation passed - assigned NAS execution pending) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 714 Tm (6. UGREEN AI NAS capabilities) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 700 Tm (File discovery establishes scope; document reading and reconciliation extract procedure) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 686 Tm (evidence; supported transcription adds spoken context; approved text saving preserves) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 672 Tm (the reviewed handover.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 645 Tm (7. Technical approach) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 631 Tm (The Markdown parent delegates ug-filesystem work to file-agent, ug-document qa/reconcile) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 617 Tm (to document-agent, and ug-knowledge transcription/save-text to knowledge-agent. Real) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 603 Tm (upstream evidence drives each step. Inputs specify process, scope, authority and) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 589 Tm (learner. Verify model routing before private reads; prefer local processing. Writes) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 575 Tm (require separate approval. Codex assisted development.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 548 Tm (8. Current development status) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 534 Tm (Implemented: original Markdown workflow, references, synthetic fixtures, concept demo,) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 520 Tm (proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 506 Tm (reconcile authoring; official static reports accompany the release. NAS installation,) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 492 Tm (execution, extraction accuracy and model routing remain untested. Entrant review is) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 478 Tm (pending.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 451 Tm (9. Final validation plan) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 437 Tm (Core one: recover missing approver and tolerance without inventing either. Core two:) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 423 Tm (preserve a current procedure's conflict with a recording and exclude it from settled) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 409 Tm (teaching. Edge: unreadable recording with no readable sources must produce no procedure) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 395 Tm (or write.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 368 Tm (10. Known limitations) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 354 Tm (Depends on supported experts, readable sources and confirmed model routing.) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 340 Tm (Transcription may misread important words; a handover report does not certify practical) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 326 Tm (competence. No custom runtime or external API is bundled.) Tj ET
+BT /F2 9 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 294 Tm (Third-party information \(excluded from substantive response limit\)) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 281 Tm (UGREEN tools/experts: UGREEN terms; no kit redistributed. No third-party runtime code, dataset or model) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 270 Tm (bundled. Separate demos: Rubik, SIL OFL 1.1. PDF creation: original Python standard-library code. Local) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 259 Tm (checks: pypdf, BSD-3-Clause; PyYAML, MIT. Sources and full disclosures accompany the Skill.) Tj ET
+BT /F1 8.2 Tf 0.35 0.42 0.38 rg 1 0 0 1 46 35 Tm (Substantive responses: 289 words | 2026-11-09 | 2/2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000002565 00000 n 
+0000002701 00000 n 
+0000006823 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+6959
+%%EOF

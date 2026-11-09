@@ -4,8 +4,10 @@
   "intended_visibility": "private",
   "remote_creation_verified": false,
   "remote_commit_verified": false,
-  "last_preflight": "gh repo view pedrochgdev/ugreen-ai-nas-skills --json nameWithOwner,url,isPrivate",
+  "user_reports_authentication_completed": true,
+  "last_preflight": "gh api user --jq .login",
   "last_result": "error connecting to api.github.com",
+  "dns_check": "api.github.com and github.com: Temporary failure in name resolution",
   "github_integration_connection": "not confirmed",
-  "required_next_step": "Establish authenticated GitHub access and retry the verified publication flow."
+  "required_next_step": "Restore this session's network access, inspect the destination, then publish privately and verify visibility and the remote commit. Do not request another login solely on the basis of the connection failure."
 }

@@ -1,40 +1,39 @@
 # BenchMatch: architecture
 
-## Execution model
+## Execution
 
-User request and scoped authorization -> registered-expert reads -> checked
-evidence records -> parent domain reasoning -> human review -> separately approved
-write -> readback. No standalone application server or custom NAS runtime exists.
+User goal and scoped authorization -> real registered-expert reads -> checked
+source evidence -> parent domain reasoning -> human review -> approved workflow
+write -> independent readback. No custom NAS runtime or web backend is bundled.
+The parent uses standard delegate calls; experts own their CLI options.
 
-The Skill entry point supplies the workflow. execution-policy.md defines shared
-states and evidence handling; workflow-contract.md carries the domain decisions;
-result-format.md specifies the artifact. All six references are directly linked
-from SKILL.md. The package has no separate manifest, executable or dependency bundle.
+## Official capability boundary
 
-## State model
+The supplied UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 establish the exact
+published CLI/agent ownership and actions in capability-map.md. The controlled
+checker is run on the source and extracted ZIP. Its static pass does not verify
+permissions, model routing, formats, extraction accuracy or runtime stability.
 
-Collect -> verify capabilities/route -> discover -> extract -> derive -> review ->
-approve -> write -> verify. Empty/failed/unknown states stop dependents. Partial
-coverage remains visible. Changes return the affected work to review and invalidate
-approval. An uncertain write enters inspection, not automatic retry.
+Free-form document evidence uses qa rather than invented extract schemas.
+save-text uses an approved output directory and filename hint; actual outputFile
+and verification fields establish the result. No create-only flag is invented.
+The no-replacement policy must be enforced by the registered child workflow.
+Unsupported guarantees stop an optional write without discarding the preview.
 
-## Capability boundary
+## States and persistence
 
-The exact proposed registry and CLI bindings are documented as unverified in
-capability-map.md. The public official guide establishes families, not schemas.
-The official tool/catalog gate is unresolved; it must be reconciled before
-installation or submission. Optional capabilities fail explicitly.
+Collect -> discover -> read -> derive -> review -> approve -> write -> verify.
+Empty, unknown or failed required data stops dependents. Partial coverage stays
+visible. Changed input or decisions invalidate approval. Unknown write completion
+requires inspection before a user-requested retry.
 
-## Persistence and data
+Sources remain unchanged in authorized storage. Reports use only a new approved
+location. Prior reports require explicit selection; there is no implicit database,
+background watcher or scheduled task.
 
-Sources remain in authorized NAS storage; reports use a new approved path.
-Previous reports are read only when explicitly supplied. There is no implicit
-database, scheduled process or background watcher. Model routing must be checked
-for parent reasoning and experts, including any cloud processing.
+## Presentation and authoring tests
 
-## Presentation and tests
-
-The HTML demo simulates the user interaction. Synthetic fixtures contain no real
-personal data. Development-only reference models exercise selected policy rules
-outside Uliya. Structural checks inspect ZIP/PDF properties. None executes NAS
-experts or proves model accuracy, installation, permissions or locality.
+HTML pages simulate user interactions. Synthetic fixture records and policy-model
+tests run outside Uliya. Structural and PDF checks are local development evidence.
+The real official checker supplies separate static reports; only the assigned NAS
+can establish installation, actual expert behavior and model/data routing.

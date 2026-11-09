@@ -3,13 +3,14 @@
 | Resource | Purpose | Source / applicable terms | Included in Skill ZIP? |
 | --- | --- | --- | --- |
 | UGREEN public Starter Kit and rules | Capability-family and submission research | https://ai.ugreen.com/pages/hackathon-starter-kit and UGREEN agreements | Links only; no kit redistribution |
-| UGOS Skill Creation Tool | Required future official authoring/catalog/checker gate | Official archive linked from Starter Kit; not downloaded or used in this environment | No |
-| Uliya model and registered experts | Intended NAS runtime | UGREEN platform terms; actual route and capabilities need verification | No software bundled |
+| UGOS Skill Creation Tool 0.7.3 | Official authoring instructions, catalog 2.0.0 and static checker | User-supplied archive from Starter Kit, read and used in place; UGREEN terms | No toolkit/catalog redistribution; original orchestration and real diagnostic reports only |
+| Uliya model and registered experts | Intended NAS runtime | UGREEN platform terms; documented bindings checked, device behavior and model route pending | No software bundled |
 | Rubik variable font | Standalone HTML typography | https://github.com/googlefonts/rubik ; SIL Open Font License 1.1 | No; embedded with license in HTML demos only |
 | Python | Local original PDF/ZIP generation and rule models | https://www.python.org/ ; Python Software Foundation license | No |
 | pypdf | Local PDF structure/text checks | https://github.com/py-pdf/pypdf ; BSD-3-Clause | No |
 | PyYAML | Dependency of generic Codex metadata validation | https://github.com/yaml/pyyaml ; MIT | No |
 | jsdom | Optional local DOM/route smoke checks | https://github.com/jsdom/jsdom ; MIT | No |
+| Node.js | Local execution of the official static checker | https://nodejs.org/ ; MIT and bundled dependency notices | No |
 | OpenAI Codex | Concept selection, original Skill/reference/proposal/demo/test authoring and local tool orchestration | Applicable OpenAI service terms | AI assistance disclosed; no SDK, key or model bundled |
 
 The developer tools above are not NAS runtime dependencies. No third-party API

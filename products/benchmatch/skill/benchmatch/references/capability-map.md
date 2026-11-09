@@ -1,37 +1,38 @@
-# Capability binding and evidence
+# Official capability evidence
 
-**Release gate: official catalog and authoring-tool validation are pending.**
-The official public guide confirms capability families. It does not establish
-the following exact CLI actions, schemas, registry names or album semantics.
-Treat these as proposed authoring bindings until checked against the downloaded
-official catalog and the assigned environment. An unavailable binding stops its
-dependent operation; never improvise direct resource access.
+Source: UGOS Skill Creation Tool 0.7.3, catalog 2.0.0, supplied by the user.
+Catalog SHA-256: c927fd8e233696cd152baf98468368912c13c08aabeac353f0ee95c46c0428e6.
+Only published CLI families and their unique agent mappings are used.
+Actions below are generation-time evidence; experts own their actual options.
 
-| Proposed CLI | Proposed registered expert | Actions to verify | Intended step |
-| --- | --- | --- | --- |
-| ug-filesystem | file-agent | find, stat, cat | Discover run records, preserve source identity/freshness and verify the report. |
-| ug-document | document-agent | qa, extract, reconcile | Extract run-bound values with units and reconcile conflicting records. |
-| ug-knowledge | knowledge-agent | audio-transcription, save-text | Optionally read a supported spoken run note and save the separately approved report. |
+| CLI | Registered expert | Action | Effect | Approval |
+| --- | --- | --- | --- | --- |
+| `ug-filesystem` | `file-agent` | `find` | read | none |
+| `ug-filesystem` | `file-agent` | `stat` | read | none |
+| `ug-filesystem` | `file-agent` | `cat` | read | none |
+| `ug-filesystem` | `file-agent` | `sha256sum` | read | none |
+| `ug-document` | `document-agent` | `qa` | read | none |
+| `ug-document` | `document-agent` | `reconcile` | read | none |
+| `ug-knowledge` | `knowledge-agent` | `audio-transcription` | read | none |
+| `ug-knowledge` | `knowledge-agent` | `save-text` | state-change | workflow |
 
-Public family evidence: [Starter Kit](https://ai.ugreen.com/pages/hackathon-starter-kit), section 6.
-Files: discovery and organization. Documents: reading, extraction and
-reconciliation. Knowledge: supported transcription and text saving.
-Albums: person/time search and album creation; exact membership remains a gate.
+## What the catalog does not establish
 
-## Before promotion to a submission candidate
+Permissions, prerequisites, error codes, action stability and example result
+status are marked unknown. Confirm actual formats, routing, coverage and
+approval behavior on the assigned NAS; do not interpret a static pass as
+a runtime test.
 
-Use the official creation tool to author/reconcile these instructions; record
-its real version and catalog version outside the package. Resolve every proposed
-binding, action input/output, state effect and approval policy. Run its actual
-checker on both the source and extracted ZIP. Do not replace this gate with
-the repository's generic or structural checks. No official pass is claimed here.
+## Reading documents
 
-## Runtime capability preflight
+The qa action supports content_read, extraction, comparison and
+locate_content intents, with actual evidence and coverage returned by the
+expert. The separate extract action has a fixed schema list; no custom
+procedure, interview or prototype-run schema is asserted.
 
-After the developer gate is resolved, verify registered expert availability
-and supported input/output contracts before processing private content. Do not
-probe an undocumented CLI from the parent. Ask the platform/user for the
-capability declaration or let the registered expert confirm only documented
-operations. If evidence is unavailable, stop that branch and explain the
-specific unsupported operation. Preview-only output may continue only from
-already authorized completed results.
+## Saving
+
+save-text has workflow approval and returns verified, outputFile and
+contentBytes. Treat its path as an output-directory choice, not proof that
+an arbitrary literal filename was written. Preserve no-replacement policy
+through the child workflow and use actual outputFile for readback.

@@ -13,18 +13,24 @@ Las cuatro no elegidas están en concepts/, únicamente con su demo y README.
 ## Entregables
 
 Cada carpeta de products/ contiene la Skill, seis referencias, propuesta en inglés,
-datos ficticios, guías, arquitectura y validación. Los PDF y ZIP están en deliverables/.
+datos ficticios, guías, arquitectura y validación. Usa los PDF y ZIP de las carpetas
+v0.2.0 en deliverables/, enlazados en el [README principal](README.md).
 Las diez respuestas de cada PDF están por debajo de las 500 palabras inglesas.
 Cada ZIP de Skill contiene exclusivamente Markdown; las herramientas de desarrollo
 y las demos permanecen fuera.
 
 ## Estado real
 
-La autoría y las comprobaciones locales están hechas. Falta usar y ejecutar el
-UGOS Skill Creation Tool oficial: su ZIP no se pudo descargar en este entorno.
-Por ello los identificadores y contratos de capacidades deben verificarse contra
-el catálogo oficial antes de considerar una alternativa lista para presentar.
-Tampoco se ha instalado ni ejecutado en un NAS.
+Se utilizó el UGOS Skill Creation Tool 0.7.3 que proporcionaste, su estándar y el
+catálogo 2.0.0. Las cuatro Skills y las extracciones independientes de sus ZIP
+pasan el validador oficial sin errores ni advertencias. Se ajustaron las
+delegaciones, la extracción de documentos, el guardado y la verificación de álbumes
+a los contratos documentados. Los informes reales están en
+[validation/official](validation/official/README.md).
+
+La versión 0.2.0 conserva los entregables anteriores como historial. No se ha
+instalado ni ejecutado en un NAS: quedan por comprobar permisos, formatos,
+modelos y comportamiento real durante el acceso de finalistas.
 
 Las pruebas de reglas y las demos no sustituyen esas comprobaciones.
 Consulta [STATUS.md](STATUS.md) y [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md).
@@ -35,6 +41,7 @@ Elige una de estas cuatro alternativas para la inscripción.
 ## Repositorio
 
 Este directorio está preparado como un único repositorio. El destino previsto es
-un repositorio privado nuevo en GitHub. La autenticación local y el acceso de red
-han impedido verificar una subida; los pasos están en [PUBLISHING.md](PUBLISHING.md).
+un repositorio privado nuevo en GitHub. Ya indicaste que completaste la
+autenticación, pero esta sesión no resuelve los servidores de GitHub y la subida
+sigue sin verificarse. Los pasos están en [PUBLISHING.md](PUBLISHING.md).
 No se ha realizado ninguna inscripción ni publicación en Devpost.

@@ -1,23 +1,25 @@
 # Publishing this single repository
 
-The user authorized uploading one repository. A new **private** repository is the
-default chosen to avoid assuming public disclosure of the entrant's work.
-The intended name is ugreen-ai-nas-skills in the authenticated user's account.
+The user explicitly authorized uploading one **private** repository.
+The intended destination is pedrochgdev/ugreen-ai-nas-skills.
 
 ## Current blocker
 
-The local GitHub CLI cannot authenticate its configured account. The shell also
-cannot resolve public hosts. No repository URL or successful remote commit has
-been verified. A GitHub integration was offered, but its connection must be
-confirmed before its tools can be used. No token is included in these materials.
+The user reports that authentication is complete. The latest gh api user request
+still failed to connect to api.github.com. Direct DNS checks also failed for
+api.github.com and github.com with "Temporary failure in name resolution".
+This prevents verifying authentication, repository creation or a remote commit
+from this session. It is not evidence that the user needs to log in again.
+No token is included in these materials.
 
-## Once authentication and network access work
+## Once this session has working GitHub network access
 
 Run from this repository:
 
 ~~~sh
-gh auth status
-gh repo create ugreen-ai-nas-skills --private --source=. --remote=origin --push
+gh api user --jq .login
+gh repo view pedrochgdev/ugreen-ai-nas-skills --json nameWithOwner,url,isPrivate
+gh repo create pedrochgdev/ugreen-ai-nas-skills --private --source=. --remote=origin --push
 gh repo view --json nameWithOwner,url,isPrivate
 git ls-remote origin refs/heads/main
 ~~~
@@ -30,8 +32,8 @@ If a repository was already created by an interrupted attempt, do not create a
 second one. Inspect its state and use the matching remote. Compare the remote main
 commit to local HEAD before reporting publication complete.
 
-Authenticate through GitHub's normal login flow. Do not put tokens in commands,
-files, READMEs, issues or chat messages.
+If a working connection reports an actual authorization error, use GitHub's normal
+login flow. Do not put tokens in commands, files, READMEs, issues or chat messages.
 
 ## Optional hosting
 

@@ -68,8 +68,12 @@ Show the exact reviewed result and destination, then obtain consent immediately
 before each write or album operation, in addition to platform approval. A single
 general approval does not authorize a later changed result. Preserve originals.
 Do not delete, rename, move, overwrite, transmit, share or publish source files.
-Save only a new report text file in an existing user-authorized destination.
-If the destination already exists, ask for a fresh name; do not overwrite it.
+Ask knowledge-agent to save only the complete approved report in an existing
+user-authorized output directory with a filename hint. The actual outputFile
+returned by save-text, rather than a constructed path, identifies the saved file.
+If the proposed report name already exists, ask for a fresh hint; do not
+authorize replacement. The expert must confirm the final location remains
+inside the approved directory.
 
 Check that the supported save operation can avoid collisions at execution time.
 If it cannot guarantee create-only behavior, stop the save and offer the reviewed
@@ -81,3 +85,19 @@ the approved report before saying it was verified. If readback fails, report
 If a write times out with unknown completion, inspect that exact destination
 through supported read-only means before proposing a retry. Do not repeat an
 album creation or save merely because a response was interrupted.
+
+
+## Confirmed catalog limits
+
+The supplied catalog is version 2.0.0. Its save-text action has state-change effect
+and workflow approval; successful data includes verified=true, outputFile and
+contentBytes. It takes an output directory and content or a real returned content
+reference, with an optional filename hint. It does not publish a create-only flag.
+The child workflow must therefore enforce the no-replacement requirement; if it
+cannot, stop the write and offer the reviewed conversation output.
+
+Use the returned outputFile for file-agent readback. Both expert completion and
+the returned verified value must be checked; an error or absent verification is
+not a successful save. Independently compare complete readback with approved text.
+The catalog marks permissions, prerequisites, error codes and action stability
+unknown; do not invent them or claim they were tested by static validation.

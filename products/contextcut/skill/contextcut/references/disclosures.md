@@ -2,47 +2,45 @@
 
 ## Original work and AI assistance
 
-This candidate's instructions, workflow rules, synthetic examples, proposal and
-documentation were newly authored during this hackathon development session.
-OpenAI Codex assisted idea selection, authoring, demo development, local checking
-and PDF preparation. The entrant has not been represented as having reviewed,
-signed, submitted or personally validated these generated materials.
-No other entrant's Skill, package or core content is reused.
+OpenAI Codex assisted idea selection, original Skill/reference/proposal authoring,
+demo development, local checks and PDF preparation during this hackathon.
+The entrant has not been represented as having reviewed, signed or submitted the
+generated materials. No other entrant Skill or core content is reused.
 
-## Official resources and limits of verification
+## Official authoring resources
+
+The user supplied uliya-skill-kit-0.7.3-en.zip from the official Starter Kit.
+Its archive SHA-256 is cf557e5a022e4297892f39768132855154232efdedeb726b2845450ccd70e1b3.
+The toolkit instructions, development standard, catalog 2.0.0 and controlled
+checker were read and used to reconcile this release. The exact official
+diagnostics and per-file SHA-256 values are preserved outside the Skill ZIP.
+The source folder and an independent ZIP extraction receive separate checks.
 
 - [Official Starter Kit](https://ai.ugreen.com/pages/hackathon-starter-kit)
-- [Official submission requirements](https://ugreenhackathon.devpost.com/)
+- [Official requirements](https://ugreenhackathon.devpost.com/)
 - [Official rules](https://ugreenhackathon.devpost.com/rules)
-- [Official creation-tool archive](https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898)
 
-UGREEN's developer tooling and runtime experts remain subject to UGREEN's terms.
-No license to redistribute the kit is assumed and no kit files are included.
-The public guide was consulted, but the official archive could not be downloaded
-in this environment. The creation tool was not installed or run. CLI/action and
-agent bindings in capability-map.md are proposals requiring official-catalog
-verification. Local checks are not the official checker and do not replace it.
-NAS installation, execution, permissions, model routing and performance are untested.
-This package is an authored candidate, not certified submission-ready.
+UGREEN tooling and runtime experts remain subject to UGREEN agreements. The
+toolkit and catalog are not redistributed in this package or source repository.
+A static pass does not establish installation, live permissions, model locality,
+supported file formats, extraction quality or NAS execution.
 
-## Runtime dependencies and data flows
+## Runtime and data
 
-The package contains only original Markdown instructions. It bundles no SDK,
-library, script, executable, dataset, model weights, credentials or service endpoint.
-The intended runtime dependencies are the supported Uliya model and registered
-UGREEN experts. The candidate adds no external runtime service.
-Actual platform model routing must be verified and authorized before private
-content is read. No promise of offline operation is made without that evidence.
+The Skill bundles only original Markdown instructions. No SDK, executable, script,
+dataset, model weight, credential or external API is included. Runtime uses the
+registered UGREEN experts and the configured model. Verify routing for parent
+reasoning and experts before private data is read; local processing is preferred
+but not claimed as measured. Conditional writes require review and platform approval.
 
-## Separate development and presentation material
+## Separate development material
 
-The repository's HTML demos use fictional fixtures and include Rubik under the
-SIL Open Font License 1.1, embedded in each demo. Python standard-library tooling
-creates the PDFs and ZIPs; pypdf under BSD-3-Clause verifies PDFs locally.
-The Codex generic frontmatter check uses PyYAML under MIT. None is bundled in this
-Skill package or required by its NAS workflow. Browser demos and policy-model
-tests do not execute Uliya or any NAS expert.
+Browser demos use fictional data and embedded Rubik under SIL OFL 1.1. Original
+Python standard-library tooling creates PDFs and ZIPs. Local PDF checking uses
+pypdf under BSD-3-Clause; generic metadata validation uses PyYAML under MIT.
+These tools, demos and tests stay outside the Skill ZIP and are not NAS runtimes.
+Policy tests and paper walkthroughs do not execute the Skill on a device.
 
-Original project content has no project-wide open-source license assigned.
-Third-party material retains its own license. The entrant must review ownership,
-eligibility and required declarations before entering one project.
+No project-wide open-source license has been assigned to original content.
+Third-party rights remain unchanged. The entrant must review rights, eligibility
+and declarations and enter only one project under the published rules.

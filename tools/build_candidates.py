@@ -10,6 +10,9 @@ import shutil
 import textwrap
 import unicodedata
 import zipfile
+import argparse
+import tempfile
+import official_authoring as official
 
 WORKSPACE = Path(__file__).resolve().parents[1]
 IN_REPOSITORY = (WORKSPACE / "products").is_dir() and (WORKSPACE / "deliverables").is_dir()
@@ -784,95 +787,10 @@ def words(text):
     return max(len(text.split()),len(re.findall(r"[A-Za-z0-9]+(?:['-][A-Za-z0-9]+)*",text)))
 
 def capability_map(p):
-    lines = ["# Capability binding and evidence", "",
-      "**Release gate: official catalog and authoring-tool validation are pending.**",
-      "The official public guide confirms capability families. It does not establish",
-      "the following exact CLI actions, schemas, registry names or album semantics.",
-      "Treat these as proposed authoring bindings until checked against the downloaded",
-      "official catalog and the assigned environment. An unavailable binding stops its",
-      "dependent operation; never improvise direct resource access.", "",
-      "| Proposed CLI | Proposed registered expert | Actions to verify | Intended step |",
-      "| --- | --- | --- | --- |"]
-    lines.extend(f"| {cli} | {agent} | {actions} | {purpose} |" for cli,agent,actions,purpose in p["capabilities"])
-    lines += ["", f"Public family evidence: [Starter Kit]({STARTER}), section 6.",
-      "Files: discovery and organization. Documents: reading, extraction and",
-      "reconciliation. Knowledge: supported transcription and text saving.",
-      "Albums: person/time search and album creation; exact membership remains a gate.",
-      "", "## Before promotion to a submission candidate", "",
-      "Use the official creation tool to author/reconcile these instructions; record",
-      "its real version and catalog version outside the package. Resolve every proposed",
-      "binding, action input/output, state effect and approval policy. Run its actual",
-      "checker on both the source and extracted ZIP. Do not replace this gate with",
-      "the repository's generic or structural checks. No official pass is claimed here.",
-      "", "## Runtime capability preflight", "",
-      "After the developer gate is resolved, verify registered expert availability",
-      "and supported input/output contracts before processing private content. Do not",
-      "probe an undocumented CLI from the parent. Ask the platform/user for the",
-      "capability declaration or let the registered expert confirm only documented",
-      "operations. If evidence is unavailable, stop that branch and explain the",
-      "specific unsupported operation. Preview-only output may continue only from",
-      "already authorized completed results.",
-    ]
-    return "\n".join(lines)
+    return official.capability_map(p)
 
 def skill(slug,p):
-    evidence="\n".join(f"- {BT}{cli}{BT} → {BT}{agent}{BT}: proposed binding; official-catalog verification pending." for cli,agent,_,_ in p["capabilities"])
-    return f"""---
-name: {slug}
-description: {json.dumps(p["description"])}
----
-
-# Goal
-
-{p["goal"]}
-
-Use when the user asks: "{p["trigger"]}"
-
-# Required input
-
-{p["inputs"]}
-
-Bounds: {p["limits"]}
-
-Do not treat the illustrative HTML demo or its fictional identifiers as NAS inputs.
-
-# Generation-time capability evidence
-
-This is an authored candidate. The public Starter Kit was read; the required
-official creation tool could not be downloaded, installed or run. Before this
-candidate is submitted or installed, the developer must resolve the release gate
-in [Capability binding and evidence](references/capability-map.md).
-
-{evidence}
-
-No exact CLI/action support, official checker result, local model availability or
-NAS runtime success is claimed. Follow the verified catalog after that gate;
-an unresolved operation must stop, not be replaced with a script or guessed CLI.
-
-# Orchestration
-
-Read [Execution policy](references/execution-policy.md) for scopes, evidence,
-expert delegation, model routing, state transitions, freshness and write approval.
-All NAS operations are delegated; the parent only reasons over real returned data.
-
-{p["workflow"]}
-
-Read [Workflow contract](references/workflow-contract.md) when deriving the result,
-and use [Result format](references/result-format.md) for the complete reviewed output.
-
-# Completion and failure
-
-Handle completed, failed, cancelled, waiting_user and waiting_approval exactly as
-defined in the execution policy. A partial preview is labeled partial. Empty,
-unreadable or unsupported inputs never become inferred evidence. Changing an input
-or decision invalidates the affected preview and any previous write approval.
-Report preview, user decisions, actual writes and readback as separate outcomes.
-Never claim a planned or unverified operation completed.
-
-The developer uses [Validation plan](references/validation-plan.md) for the two
-core cases, edge case and assigned NAS session. Source, license, tool and runtime
-disclosures are in [Disclosures](references/disclosures.md).
-"""
+    return official.entrypoint(slug,p)
 
 def validation_plan(p):
     out=["# Validation plan", "",
@@ -926,7 +844,7 @@ def make_pdf(slug,p,path):
             content.append(f"BT /{font} {size} Tf {color} rg 1 0 0 1 {x} {y} Tm ({esc(text)}) Tj ET")
         line(p["name"]+" / Round 1 proposal",46,788,23,"F2")
         line(p["track"],46,765,11)
-        line("Authored candidate - official validation and NAS execution pending",46,743,8.8,color="0.45 0.30 0.08")
+        line("Official static validation passed - assigned NAS execution pending",46,743,8.8,color="0.45 0.30 0.08")
         y=714
         for i in indices:
             title=f"{i+1}. {QUESTIONS[i]}"
@@ -979,61 +897,7 @@ def zip_skill(slug,folder,path):
             z.writestr(info,file.read_bytes())
 
 def product_readme(slug,p):
-    return f"""# {p["name"]}
-
-{p["goal"]}
-
-Track: **{p["track"]}**. Status: **authored Round 1 alternative; official validation pending**.
-
-[Try the existing concept demo](demo.html) · [Proposal PDF](../../deliverables/{slug}/{slug}-proposal.pdf) · [Initial Skill ZIP](../../deliverables/{slug}/{slug}-initial-skill.zip) · [Skill entry point](skill/{slug}/SKILL.md)
-
-## End-user workflow
-
-Say: "{p["trigger"]}"
-
-1. Select the exact sources and confirm the processing route.
-2. Review source-backed findings and incomplete coverage.
-3. Answer, skip or change the domain-specific decisions.
-4. Approve the complete preview and an exact new destination.
-5. Receive the actual write and readback outcomes separately.
-
-The demo is hardcoded, runs offline and does not access NAS data or call a model.
-It explains the earlier interaction concept; the Skill documents the full evidence
-and execution contract. Its fictional names and identifiers are not runtime inputs.
-
-## What is included
-
-- Original Markdown Skill and six directly linked references.
-- English ten-answer proposal, under 500 substantive words, with matching PDF.
-- Synthetic authoring fixtures, a user guide, architecture and finalist test plan.
-- An initial ZIP containing only the Skill entry point and Markdown references.
-
-## What is not validated yet
-
-The required official creation tool could not be downloaded in this environment.
-It has not been installed or used. Exact CLI/action/agent bindings are proposed
-until verified against its official catalog; no official static pass is claimed.
-Installation and execution on UGREEN AI NAS, real permissions, model locality,
-input formats and result semantics remain untested. Local structural checks,
-development policy models and the browser demo do not establish those properties.
-
-Do not present this alternative as contest-ready until the official gate in
-[SUBMISSION_GUIDE.md](../../SUBMISSION_GUIDE.md) is resolved. Choose only one
-project for the hackathon; the four alternatives are not four authorized entries.
-
-## Local checks
-
-From the repository root:
-
-~~~sh
-python3 tools/validate_repository.py
-python3 -m unittest discover -s tests -v
-~~~
-
-See [proposal source](proposal.md), [user guide](docs/USER_GUIDE.md),
-[architecture](docs/ARCHITECTURE.md), [validation](docs/VALIDATION.md) and
-[disclosures](skill/{slug}/references/disclosures.md).
-"""
+    return official.product_readme(slug,p)
 
 def user_guide(p):
     return f"""# {p["name"]}: end-user guide
@@ -1076,49 +940,17 @@ not a working NAS installation or runtime test.
 """
 
 def architecture(p):
-    return f"""# {p["name"]}: architecture
-
-## Execution model
-
-User request and scoped authorization -> registered-expert reads -> checked
-evidence records -> parent domain reasoning -> human review -> separately approved
-write -> readback. No standalone application server or custom NAS runtime exists.
-
-The Skill entry point supplies the workflow. execution-policy.md defines shared
-states and evidence handling; workflow-contract.md carries the domain decisions;
-result-format.md specifies the artifact. All six references are directly linked
-from SKILL.md. The package has no separate manifest, executable or dependency bundle.
-
-## State model
-
-Collect -> verify capabilities/route -> discover -> extract -> derive -> review ->
-approve -> write -> verify. Empty/failed/unknown states stop dependents. Partial
-coverage remains visible. Changes return the affected work to review and invalidate
-approval. An uncertain write enters inspection, not automatic retry.
-
-## Capability boundary
-
-The exact proposed registry and CLI bindings are documented as unverified in
-capability-map.md. The public official guide establishes families, not schemas.
-The official tool/catalog gate is unresolved; it must be reconciled before
-installation or submission. Optional capabilities fail explicitly.
-
-## Persistence and data
-
-Sources remain in authorized NAS storage; reports use a new approved path.
-Previous reports are read only when explicitly supplied. There is no implicit
-database, scheduled process or background watcher. Model routing must be checked
-for parent reasoning and experts, including any cloud processing.
-
-## Presentation and tests
-
-The HTML demo simulates the user interaction. Synthetic fixtures contain no real
-personal data. Development-only reference models exercise selected policy rules
-outside Uliya. Structural checks inspect ZIP/PDF properties. None executes NAS
-experts or proves model accuracy, installation, permissions or locality.
-"""
+    return official.architecture(p)
 
 def main():
+    global POLICY, DISCLOSURES
+    parser=argparse.ArgumentParser(description="Build immutable official-checked Skill releases")
+    parser.add_argument("--kit",type=Path,default=WORKSPACE.parent/"research/official/kit-0.7.3-en/uliya-skill-kit")
+    args=parser.parse_args()
+    context=official.load_kit(args.kit)
+    POLICY,DISCLOSURES=official.configure(PRODUCTS,POLICY,DISCLOSURES)
+    staged=tempfile.TemporaryDirectory(prefix="ugreen-release-")
+    stage=Path(staged.name)
     REPO.mkdir(exist_ok=True)
     write(REPO/".gitignore","__pycache__/\n*.pyc\n.venv/\n.vendor/\n.local/\n.env\n*.log\n.DS_Store\n")
     # Copy the existing, already-tested demo collection without redesigning it.
@@ -1142,6 +974,7 @@ def main():
               "result-format.md":p["output"],"capability-map.md":capability_map(p),
               "validation-plan.md":validation_plan(p),"disclosures.md":DISCLOSURES}
         for name,body in refs.items(): write(skill_dir/"references"/name,body)
+        official.check_source(slug,skill_dir,REPO/"validation/official"/("v"+official.VERSION)/"source")
         write(base/"README.md",product_readme(slug,p))
         write(base/"demo.html",local_demo_copy(slug))
         write(base/"docs"/"USER_GUIDE.md",user_guide(p))
@@ -1169,9 +1002,29 @@ browser replies are real NAS outputs. Use only owned/licensed synthetic assets.
         proposal+=f"\n\nSubstantive response count: {counts[slug]} words.\n\n## Third-party information\n\nUGREEN tooling and runtime experts: UGREEN terms, no redistribution. No third-party runtime code or model is bundled. Separate demos: Rubik under SIL OFL 1.1. PDF creation: original Python standard-library code. Local checks: pypdf (BSD-3-Clause) and PyYAML (MIT). AI assistance is disclosed in response 7 and the Skill disclosures.\n"
         write(base/"proposal.md",proposal)
         write(base/"proposal-answers.json",dict_to_json({"questions":QUESTIONS,"answers":p["answers"],"word_count":counts[slug]}))
-        delivery=REPO/"deliverables"/slug;delivery.mkdir(parents=True,exist_ok=True)
+        delivery=stage/slug/("v"+official.VERSION);delivery.mkdir(parents=True,exist_ok=True)
         make_pdf(slug,p,delivery/f"{slug}-proposal.pdf")
         zip_skill(slug,skill_dir,delivery/f"{slug}-initial-skill.zip")
+        official.check_archive(slug,delivery/f"{slug}-initial-skill.zip",REPO/"validation/official"/("v"+official.VERSION)/"extracted-zip")
+    official.promote(stage,REPO/"deliverables")
+    staged.cleanup()
+    write(REPO/"validation/official-kit.json",dict_to_json({
+        "release":official.VERSION,
+        "source":"user-supplied official toolkit archive, loaded in place",
+        "official_page":STARTER,
+        "supplied_archive_sha256":official.ARCHIVE_SHA256,
+        "tool_version":"0.7.3",
+        "catalog_version":context["catalog"]["catalogVersion"],
+        "catalog_sha256":context["catalog_sha256"],
+        "checker_sha256":context["checker_sha256"],
+        "checker_library_sha256":context["checker_library_sha256"],
+        "creation_tool_used":True,
+        "official_checker_run":True,
+        "source_and_extracted_zip":"static-pass for all four Skills; see raw reports",
+        "exact_cli_agent_action_bindings":"checked against supplied catalog",
+        "nas_runtime":"not performed",
+        "note":"Permissions, prerequisites, error codes and stability are unknown in the catalog. Static checks do not establish runtime behavior."
+    }))
     unselected={
         "lottrace":("LotTrace","Automate Your Workflow","Trace a material lot to orders using source-linked records and uncertain label readings.","Tacit was selected for this track because its knowledge handover provides broader repeated use; LotTrace remains an alternative with a clear traceability niche."),
         "date-detective":("Date Detective","Bring Memories to Life","Constrain the capture date of an old photo with linked testimony and archival documents.","Off Camera was selected for its immediate end-user interaction. This alternative requires careful event/source association and differentiation from existing family evidence projects."),

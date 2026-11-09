@@ -1,0 +1,16 @@
+{
+  "release": "0.2.0",
+  "scope": "Byte-for-byte reconstruction using the supplied official toolkit; no NAS operations",
+  "result": "passed",
+  "artifact_count": 8,
+  "sha256": {
+    "deliverables/benchmatch/v0.2.0/benchmatch-initial-skill.zip": "a79aab6542ab70ca3c83d12bf65c4d317c450718262a118bf6d4ff1d70a9f8d3",
+    "deliverables/benchmatch/v0.2.0/benchmatch-proposal.pdf": "c79a7260b1905f00ca5c01d00d9ab909265e94084f2e130f53ac08befd6065ac",
+    "deliverables/contextcut/v0.2.0/contextcut-initial-skill.zip": "286e0eb54ab9cc979d008c9a845f82f99919f2608984bdd71cd83e4b64ce690b",
+    "deliverables/contextcut/v0.2.0/contextcut-proposal.pdf": "d87da7634dec210a0c001937482fca917129e53231bbea31a65258595fd133b5",
+    "deliverables/off-camera/v0.2.0/off-camera-initial-skill.zip": "c99a4f727c2b43bdd61fa7daea903d6b97da3dde4f721970728ec1ddc99ed80b",
+    "deliverables/off-camera/v0.2.0/off-camera-proposal.pdf": "96937c2466bd4060e1b1f0833e15380c5a1d710c6d0abb277fa31f6e590137d9",
+    "deliverables/tacit/v0.2.0/tacit-initial-skill.zip": "a3ea6d8a13bf2e342c6b0425df98ff9f5db6f304cf9d2abecd446976a6eea549",
+    "deliverables/tacit/v0.2.0/tacit-proposal.pdf": "72d0ddbe7067b54fc12627dda25ed725e359d3ea0e07f8c2b6536e912c7abbd0"
+  }
+}

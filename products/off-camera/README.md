@@ -2,53 +2,60 @@
 
 Help a family choose a small, reviewable set of real photos that includes the people they want represented, while exposing gaps in the available archive.
 
-Track: **Bring Memories to Life**. Status: **authored Round 1 alternative; official validation pending**.
+Track: **Bring Memories to Life**. Release: **0.2.0**.
+Official static checks pass with zero errors and warnings, both for source and
+an independent extraction of the ZIP. NAS execution is still pending.
 
-[Try the existing concept demo](demo.html) · [Proposal PDF](../../deliverables/off-camera/off-camera-proposal.pdf) · [Initial Skill ZIP](../../deliverables/off-camera/off-camera-initial-skill.zip) · [Skill entry point](skill/off-camera/SKILL.md)
+[Concept demo](demo.html) · [Proposal PDF](../../deliverables/off-camera/v0.2.0/off-camera-proposal.pdf) · [Skill ZIP](../../deliverables/off-camera/v0.2.0/off-camera-initial-skill.zip) · [Entry point](skill/off-camera/SKILL.md)
 
-## End-user workflow
+## User journey
 
 Say: "Choose four memories from our trip, including Ana, who was usually behind the camera. Let me review the exact photos before creating anything."
 
-1. Select the exact sources and confirm the processing route.
-2. Review source-backed findings and incomplete coverage.
-3. Answer, skip or change the domain-specific decisions.
-4. Approve the complete preview and an exact new destination.
-5. Receive the actual write and readback outcomes separately.
+1. Confirm the real source selection, goal and processing route.
+2. Inspect cited evidence and coverage from registered experts.
+3. Resolve, skip or change the domain decisions.
+4. Review the complete result and approve each optional write separately.
+5. Receive the real output identifier and verification outcome.
 
-The demo is hardcoded, runs offline and does not access NAS data or call a model.
-It explains the earlier interaction concept; the Skill documents the full evidence
-and execution contract. Its fictional names and identifiers are not runtime inputs.
+The HTML demo is the earlier hardcoded interaction prototype. Its fictional
+records and identifiers are not live NAS inputs or evidence that the Skill ran.
+
+## Official-tool evidence
+
+The supplied UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were read and used
+to reconcile this original workflow. Exact CLI-to-agent mappings, published action
+names and effects were checked. The actual checker diagnostics, file SHA-256
+values and catalog/checker hashes are preserved in validation/official/.
+
+The developer tools are not redistributed. See [evidence](../../validation/official-kit.json)
+and [submission guide](../../SUBMISSION_GUIDE.md). The earlier unversioned ZIP/PDF
+is retained as the initial provisional candidate; use the linked v0.2.0 release.
 
 ## What is included
 
-- Original Markdown Skill and six directly linked references.
-- English ten-answer proposal, under 500 substantive words, with matching PDF.
-- Synthetic authoring fixtures, a user guide, architecture and finalist test plan.
-- An initial ZIP containing only the Skill entry point and Markdown references.
+The Skill and six linked Markdown references; English ten-answer proposal and
+matching PDF under the word/size limits; synthetic authoring fixtures; user guide;
+architecture; two core tests and an edge case; concept demo and video outline.
+The Skill ZIP contains only the named Skill directory and Markdown instructions.
 
-## What is not validated yet
+## Remaining validation
 
-The required official creation tool could not be downloaded in this environment.
-It has not been installed or used. Exact CLI/action/agent bindings are proposed
-until verified against its official catalog; no official static pass is claimed.
-Installation and execution on UGREEN AI NAS, real permissions, model locality,
-input formats and result semantics remain untested. Local structural checks,
-development policy models and the browser demo do not establish those properties.
+Static checks do not prove installation, live permissions, model locality,
+supported document formats, extraction quality, exact album behavior or device
+execution. The catalog itself marks permissions, prerequisites, error codes and
+stability unknown. Test these on the assigned NAS and review entrant declarations.
+Only one alternative may be entered by the same entrant or team.
 
-Do not present this alternative as contest-ready until the official gate in
-[SUBMISSION_GUIDE.md](../../SUBMISSION_GUIDE.md) is resolved. Choose only one
-project for the hackathon; the four alternatives are not four authorized entries.
+## Rebuild and verify
 
-## Local checks
-
-From the repository root:
-
-~~~sh
+~~~text
+python3 tools/build_candidates.py --kit /path/to/uliya-skill-kit
 python3 tools/validate_repository.py
 python3 -m unittest discover -s tests -v
 ~~~
 
-See [proposal source](proposal.md), [user guide](docs/USER_GUIDE.md),
-[architecture](docs/ARCHITECTURE.md), [validation](docs/VALIDATION.md) and
-[disclosures](skill/off-camera/references/disclosures.md).
+The first command uses the actual toolkit and refuses a changed existing release.
+The repository checks remain distinct from official checks and NAS validation.
+
+[User guide](docs/USER_GUIDE.md) · [Architecture](docs/ARCHITECTURE.md) · [Tests](docs/VALIDATION.md) · [Disclosures](skill/off-camera/references/disclosures.md)

@@ -1,10 +1,17 @@
 {
+  "release": "0.2.0",
+  "source": "user-supplied official toolkit archive, loaded in place",
   "official_page": "https://ai.ugreen.com/pages/hackathon-starter-kit",
-  "archive_url": "https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898",
-  "downloaded": false,
-  "creation_tool_used": false,
-  "official_checker_run": false,
-  "last_download_result": "curl: Could not resolve host: cdn.shopify.com",
-  "web_archive_result": "Unsupported content-type: application/zip",
-  "scope": "Public guide consulted; exact catalog and official authoring checks remain a release blocker."
+  "supplied_archive_sha256": "cf557e5a022e4297892f39768132855154232efdedeb726b2845450ccd70e1b3",
+  "tool_version": "0.7.3",
+  "catalog_version": "2.0.0",
+  "catalog_sha256": "c927fd8e233696cd152baf98468368912c13c08aabeac353f0ee95c46c0428e6",
+  "checker_sha256": "6a9e8ad164862ab787f45e577c2e2bc98cfb31cea10f5ec291cb6550eb51fb52",
+  "checker_library_sha256": "a4020044c1138f1937777d8a600df9d304ea00bf4f3bd20ae5e00883ad6542a7",
+  "creation_tool_used": true,
+  "official_checker_run": true,
+  "source_and_extracted_zip": "static-pass for all four Skills; see raw reports",
+  "exact_cli_agent_action_bindings": "checked against supplied catalog",
+  "nas_runtime": "not performed",
+  "note": "Permissions, prerequisites, error codes and stability are unknown in the catalog. Static checks do not establish runtime behavior."
 }

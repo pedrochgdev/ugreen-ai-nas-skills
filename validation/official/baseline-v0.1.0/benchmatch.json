@@ -1,0 +1,62 @@
+{
+  "checkFormatVersion": "2.0.0",
+  "status": "static-pass-needs-target-validation",
+  "target": {
+    "skillName": "benchmatch"
+  },
+  "catalog": {
+    "checkedVersion": "2.0.0"
+  },
+  "files": [
+    {
+      "path": "references/capability-map.md",
+      "sha256": "04ac39a10c8bab1922cbcf22f463ad3ef04435a1928bb145fa7e9d588eaac46b"
+    },
+    {
+      "path": "references/disclosures.md",
+      "sha256": "af09ac1fceaba039c30e4d945b4b541d3824f8908feafd949facb0ad4023925f"
+    },
+    {
+      "path": "references/execution-policy.md",
+      "sha256": "fe9b77ddda8db47b55b1d3b88b5fa755991867fda951eff67a3c373c03937954"
+    },
+    {
+      "path": "references/result-format.md",
+      "sha256": "0b8063fb1aa587db4f023c937dc0e6888f0c3d23f947205933485eac221c272d"
+    },
+    {
+      "path": "references/validation-plan.md",
+      "sha256": "138ba9e91a95b3d7b5950854c3c0116d8f71ce3b0d5ffa0ff5aa3896b404036a"
+    },
+    {
+      "path": "references/workflow-contract.md",
+      "sha256": "4f42cde8e48de0128d8a56bde8f0805489a3c39dab9c34b6718b4547cfa20ed5"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "481c3a690b5b8c4f8bbed544262df1bd1ec0926065af9b493d6122310e66bbe4"
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 2,
+    "info": 0
+  },
+  "diagnostics": [
+    {
+      "code": "DESCRIPTION_TRIGGER_MISSING",
+      "severity": "warning",
+      "file": "SKILL.md",
+      "line": 3,
+      "message": "description 没有明确说明用户触发场景。",
+      "suggestion": "补充用户实际会说的触发表达，同时保持 description 只承担索引作用。"
+    },
+    {
+      "code": "DELEGATION_WORKFLOW_STATIC_VALIDATION_INCOMPLETE",
+      "severity": "warning",
+      "file": "SKILL.md",
+      "message": "正文中没有可机械识别的标准 delegate 命令。",
+      "suggestion": "人工确认该 Skill 是否无需 NAS 专家；需要时补充标准 delegate 命令。"
+    }
+  ]
+}

@@ -28,11 +28,11 @@ File discovery establishes the source set and freshness; document lookup and rec
 
 ## 7. Technical approach
 
-A Markdown parent delegates to file, document and knowledge experts and reasons over actual returned passages. Inputs include draft, sources and speaker mapping. Proposed CLI bindings need official-kit verification. Confirm model routing before private reads; prefer a verified local route. No media editing or external API is included. Codex assisted development.
+The parent delegates ug-filesystem discovery/verification to file-agent, ug-document qa/reconcile to document-agent, and ug-knowledge transcription/save-text to knowledge-agent. Actual passages and attribution ground review. Inputs include draft and authorized sources. Confirm model routing; prefer local processing. Each write requires approval. No media editing or external API is bundled. Codex assisted development.
 
 ## 8. Current development status
 
-Implemented: complete workflow, review rules, references, synthetic transcripts, HTML concept demo, proposal and local package checks. Official-tool use and validation remain blocked by download access; NAS execution, extraction and permissions are untested. Entrant review is pending.
+Implemented: original Markdown workflow, references, synthetic fixtures, concept demo, proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to reconcile authoring; official static reports accompany the release. NAS installation, execution, extraction accuracy and model routing remain untested. Entrant review is pending.
 
 ## 9. Final validation plan
 
@@ -42,7 +42,7 @@ Core one: detect a removed shipping exception and negation with exact source con
 
 Semantic interpretation and transcription may be wrong; editorial review remains human. Locator availability depends on experts. The Skill produces reviewed text and never cuts, renders or publishes media.
 
-Substantive response count: 274 words.
+Substantive response count: 289 words.
 
 ## Third-party information
 

@@ -18,10 +18,10 @@
     "Choose process and sources; authorize processing; review evidence and questions; answer or skip; try the exercise; approve a new report.",
     "Tacit operationalizes gaps in tacit knowledge: unresolved conditions remain visible and cannot silently become instructions or correct quiz answers.",
     "File discovery establishes scope; document reading and reconciliation extract procedure evidence; supported transcription adds spoken context; approved text saving preserves the reviewed handover.",
-    "A Markdown parent delegates to file, document and knowledge experts using actual upstream results. Proposed CLI bindings require official-kit verification. Inputs include process, scope, authority and learner. Confirm model routing before private reads; prefer a verified local route. Writes need separate approval. Codex assisted authoring and checks.",
-    "Implemented: workflow, references, synthetic fixtures, HTML concept demo, proposal and local packaging checks. Official-tool use and validation remain blocked by download access; NAS installation, execution and extraction quality are untested. Entrant review remains pending.",
+    "The Markdown parent delegates ug-filesystem work to file-agent, ug-document qa/reconcile to document-agent, and ug-knowledge transcription/save-text to knowledge-agent. Real upstream evidence drives each step. Inputs specify process, scope, authority and learner. Verify model routing before private reads; prefer local processing. Writes require separate approval. Codex assisted development.",
+    "Implemented: original Markdown workflow, references, synthetic fixtures, concept demo, proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to reconcile authoring; official static reports accompany the release. NAS installation, execution, extraction accuracy and model routing remain untested. Entrant review is pending.",
     "Core one: recover missing approver and tolerance without inventing either. Core two: preserve a current procedure's conflict with a recording and exclude it from settled teaching. Edge: unreadable recording with no readable sources must produce no procedure or write.",
     "Depends on supported experts, readable sources and confirmed model routing. Transcription may misread important words; a handover report does not certify practical competence. No custom runtime or external API is bundled."
   ],
-  "word_count": 272
+  "word_count": 289
 }

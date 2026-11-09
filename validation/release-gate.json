@@ -1,0 +1,16 @@
+{
+  "result": "passed",
+  "scope": "Actual official checker on the preserved provisional ZIP; no NAS operations",
+  "warning_only_baseline_rejected": true,
+  "official_summary": {
+    "errors": 0,
+    "warnings": 2,
+    "info": 0
+  },
+  "diagnostic_codes": [
+    "DESCRIPTION_TRIGGER_MISSING",
+    "DELEGATION_WORKFLOW_STATIC_VALIDATION_INCOMPLETE"
+  ],
+  "current_release": "0.2.0",
+  "current_source_and_zip": "all eight official checks pass with zero diagnostics"
+}

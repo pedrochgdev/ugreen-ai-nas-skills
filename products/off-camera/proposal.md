@@ -28,11 +28,11 @@ Photo discovery and metadata supply confirmed people and capture-time evidence; 
 
 ## 7. Technical approach
 
-The Markdown parent delegates through photo, file and knowledge experts. Catalog bindings remain provisional until official-kit verification. Inputs are typed identities, authorized scope, period and count. Confirm actual model routing before private reads. No external service or custom runtime is added. Codex assisted authoring and local checks.
+The parent delegates ug-photo search/metadata/album work to photo-agent, ug-filesystem verification to file-agent, and ug-knowledge saving to knowledge-agent. Inputs are people, scope, period and count. Confirm model routing; prefer local processing. Catalog membership binding and actual permissions require NAS validation. No custom runtime or external service is added. Codex assisted development.
 
 ## 8. Current development status
 
-Implemented: workflow, selection rules, references, fictional candidate records, interactive HTML demo, proposal and local package checks. Official-tool use and validation are blocked by download access. NAS search, identity accuracy, approval behavior and album semantics remain untested; entrant review is pending.
+Implemented: original Markdown workflow, references, synthetic fixtures, concept demo, proposal and local checks. UGOS Skill Creation Tool 0.7.3 and catalog 2.0.0 were used to reconcile authoring; official static reports accompany the release. NAS installation, execution, extraction accuracy and model routing remain untested. Entrant review is pending.
 
 ## 9. Final validation plan
 
@@ -42,7 +42,7 @@ Core one: four distinct photos must represent the photographer when evidence per
 
 Incomplete recognition and stripped capture dates limit coverage. The greedy selection is not globally optimal. Album creation may be unavailable if exact membership cannot be preserved; a reviewed selection report remains the core result.
 
-Substantive response count: 290 words.
+Substantive response count: 305 words.
 
 ## Third-party information
 

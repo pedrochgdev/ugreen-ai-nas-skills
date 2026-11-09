@@ -6,6 +6,7 @@ import re
 import stat
 import sys
 import zipfile
+from official_authoring import VERSION
 
 ROOT = Path(__file__).resolve().parents[1]
 SLUGS = ("tacit","off-camera","contextcut","benchmatch")
@@ -49,7 +50,7 @@ def validate_skill(slug):
         assert len(data)<=MAX_FILE
         assert name=="SKILL.md" or (name.startswith("references/") and name.endswith(".md"))
         assert b"\0" not in data
-    archive=ROOT/"deliverables"/slug/f"{slug}-initial-skill.zip"
+    archive=ROOT/"deliverables"/slug/("v"+VERSION)/f"{slug}-initial-skill.zip"
     assert archive.stat().st_size<=MAX_PACKAGE
     with zipfile.ZipFile(archive) as z:
         assert z.testzip() is None
@@ -65,6 +66,13 @@ def validate_skill(slug):
             assert i.file_size<=MAX_FILE
             reconstructed[PurePosixPath(*path.parts[1:]).as_posix()]=z.read(i)
         assert reconstructed==actual, f"{slug}: ZIP must match current source exactly"
+    for origin in ("source","extracted-zip"):
+        check=json.loads((ROOT/"validation"/"official"/("v"+VERSION)/origin/(slug+".json")).read_text())
+        assert check["status"]=="static-pass"
+        assert check["summary"]=={"errors":0,"warnings":0,"info":0}
+        assert check["catalog"]["checkedVersion"]=="2.0.0"
+        recorded={item["path"]:item["sha256"] for item in check["files"]}
+        assert recorded=={name:digest(data) for name,data in actual.items()}, (slug,"official evidence is stale")
     return {"files":len(actual),"source_bytes":sum(map(len,actual.values())),
             "zip_bytes":archive.stat().st_size,"zip_sha256":digest(archive.read_bytes()),
             "entry_sha256":digest((folder/"SKILL.md").read_bytes())}
@@ -76,7 +84,7 @@ def validate_proposal(slug):
     assert len(data["questions"])==len(data["answers"])==10
     word_count=sum(count_words(a) for a in data["answers"])
     assert word_count==data["word_count"] and word_count<=500
-    pdf=ROOT/"deliverables"/slug/f"{slug}-proposal.pdf"
+    pdf=ROOT/"deliverables"/slug/("v"+VERSION)/f"{slug}-proposal.pdf"
     assert pdf.stat().st_size<=MAX_FILE
     reader=PdfReader(pdf,strict=True)
     assert not reader.is_encrypted and len(reader.pages)==2
@@ -117,9 +125,11 @@ def main():
             "scope":"Local structural/PDF checks only; not the official UGREEN checker or NAS execution",
             "result":"passed","products":results,"local_markdown_links_checked":links,
             "archived_concepts":"exactly README.md and demo.html",
-            "official_creation_tool":"not used; archive download unavailable",
-            "official_catalog_bindings":"proposed; verification pending",
-            "official_checker":"not run","nas_runtime":"not run",
+            "release":VERSION,
+            "official_creation_tool":"supplied toolkit 0.7.3 used for authoring",
+            "official_catalog_bindings":"checked against catalog 2.0.0",
+            "official_checker":"static-pass, zero diagnostics; source and extracted ZIP hashes verified",
+            "nas_runtime":"not run",
             "remote_publication":"not verified",
         }
         path.write_text(json.dumps(report,indent=2)+"\n")

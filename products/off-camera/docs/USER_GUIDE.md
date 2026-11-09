@@ -10,7 +10,7 @@ external. The Skill does not establish privacy by its package contents alone.
 
 "Choose four memories from our trip, including Ana, who was usually behind the camera. Let me review the exact photos before creating anything."
 
-The assistant confirms: Exact authorized photo scope and date window; user-confirmed people identifiers or manually identified candidate assets; requested selection size; optional user-defined event labels; optional new report path and album title. Do not infer a person from an unconfirmed face.
+The assistant confirms: Exact authorized photo scope and date window; user-confirmed people names, or manually identified candidate assets; let photo-agent resolve actual typed identities; requested selection size; optional user-defined event labels; optional new report path and album title. Do not infer a person from an unconfirmed face.
 
 ## Review
 
