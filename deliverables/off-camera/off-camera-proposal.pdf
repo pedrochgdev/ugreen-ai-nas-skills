@@ -1,0 +1,99 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 2223 >>
+stream
+0.09 0.30 0.23 rg 0 830 595 12 re f
+BT /F2 23 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 788 Tm (Off Camera / Round 1 proposal) Tj ET
+BT /F1 11 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 765 Tm (Bring Memories to Life) Tj ET
+BT /F1 8.8 Tf 0.45 0.30 0.08 rg 1 0 0 1 46 743 Tm (Authored candidate - official validation and NAS execution pending) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 714 Tm (1. What does the Skill do?) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 700 Tm (Off Camera prepares a reviewed photo selection representing user-chosen people, with) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 686 Tm (source-linked coverage and conditional exact-selection album creation.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 659 Tm (2. Target user and problem) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 645 Tm (Families often have many photographs but few appearances of the person taking them;) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 631 Tm (automatic selections can repeat the same people and moments.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 604 Tm (3. Proposed solution) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 590 Tm (Use confirmed identities, scoped photo evidence and an explainable representation) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 576 Tm (heuristic to propose a small selection the family can change.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 549 Tm (4. Core user flow) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 535 Tm (Choose people, period, source scope and count; review actual candidates and coverage;) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 521 Tm (replace photos; approve the report and, separately, a supported exact-membership album.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 494 Tm (5. Substantive difference) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 480 Tm (The selection exposes representation gaps and preserves exact reviewed membership rather) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 466 Tm (than treating generic similarity or a matching album title as completion.) Tj ET
+BT /F1 8.2 Tf 0.35 0.42 0.38 rg 1 0 0 1 46 35 Tm (Substantive responses: 290 words | 2026-11-09 | 1/2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 3963 >>
+stream
+0.09 0.30 0.23 rg 0 830 595 12 re f
+BT /F2 23 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 788 Tm (Off Camera / Round 1 proposal) Tj ET
+BT /F1 11 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 765 Tm (Bring Memories to Life) Tj ET
+BT /F1 8.8 Tf 0.45 0.30 0.08 rg 1 0 0 1 46 743 Tm (Authored candidate - official validation and NAS execution pending) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 714 Tm (6. UGREEN AI NAS capabilities) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 700 Tm (Photo discovery and metadata supply confirmed people and capture-time evidence; parent) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 686 Tm (reasoning proposes coverage; text saving records choices; album creation is conditional) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 672 Tm (on supported exact-set semantics.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 645 Tm (7. Technical approach) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 631 Tm (The Markdown parent delegates through photo, file and knowledge experts. Catalog) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 617 Tm (bindings remain provisional until official-kit verification. Inputs are typed) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 603 Tm (identities, authorized scope, period and count. Confirm actual model routing before) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 589 Tm (private reads. No external service or custom runtime is added. Codex assisted authoring) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 575 Tm (and local checks.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 548 Tm (8. Current development status) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 534 Tm (Implemented: workflow, selection rules, references, fictional candidate records,) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 520 Tm (interactive HTML demo, proposal and local package checks. Official-tool use and) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 506 Tm (validation are blocked by download access. NAS search, identity accuracy, approval) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 492 Tm (behavior and album semantics remain untested; entrant review is pending.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 465 Tm (9. Final validation plan) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 451 Tm (Core one: four distinct photos must represent the photographer when evidence permits.) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 437 Tm (Core two: replacing a photo invalidates approval, and an incorrect album member fails) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 423 Tm (verification. Edge: no photographer match must remain an explicit gap without scope) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 409 Tm (expansion.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 382 Tm (10. Known limitations) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 368 Tm (Incomplete recognition and stripped capture dates limit coverage. The greedy selection) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 354 Tm (is not globally optimal. Album creation may be unavailable if exact membership cannot be) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 340 Tm (preserved; a reviewed selection report remains the core result.) Tj ET
+BT /F2 9 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 308 Tm (Third-party information \(excluded from substantive response limit\)) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 295 Tm (UGREEN tools/experts: UGREEN terms; no kit redistributed. No third-party runtime code, dataset or model) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 284 Tm (bundled. Separate demos: Rubik, SIL OFL 1.1. PDF creation: original Python standard-library code. Local) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 273 Tm (checks: pypdf, BSD-3-Clause; PyYAML, MIT. Sources and full disclosures accompany the Skill.) Tj ET
+BT /F1 8.2 Tf 0.35 0.42 0.38 rg 1 0 0 1 46 35 Tm (Substantive responses: 290 words | 2026-11-09 | 2/2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000002600 00000 n 
+0000002736 00000 n 
+0000006750 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+6886
+%%EOF

@@ -1,0 +1,73 @@
+{
+  "scope": "Local structural/PDF checks only; not the official UGREEN checker or NAS execution",
+  "result": "passed",
+  "products": {
+    "tacit": {
+      "package": {
+        "files": 7,
+        "source_bytes": 21048,
+        "zip_bytes": 11150,
+        "zip_sha256": "47951f57f0d442193319ec92df06ac6599d19f848ac53c20802ad4b04fe47fc2",
+        "entry_sha256": "2ee7d60a14f105c7962285c9493955f5bd97b2f63184c35355219e2ce1a61b93"
+      },
+      "proposal": {
+        "substantive_words": 272,
+        "pdf_pages": 2,
+        "pdf_bytes": 7024,
+        "pdf_sha256": "b9ea97e926ef77ed0e1888105e9381e318e4153590b4d2f77abd5d452b935052"
+      }
+    },
+    "off-camera": {
+      "package": {
+        "files": 7,
+        "source_bytes": 21929,
+        "zip_bytes": 11490,
+        "zip_sha256": "5a5c82e92afe4585f893855ffde858a80c271eda06e6d3a45d2767e62ad5cd60",
+        "entry_sha256": "76caf0e5d6500f5ac7d8d7df30a714ad09aecd5873d096ac2acffe29414911fc"
+      },
+      "proposal": {
+        "substantive_words": 290,
+        "pdf_pages": 2,
+        "pdf_bytes": 7130,
+        "pdf_sha256": "81d60d102ff49d04d4df370abdf2224abc0603e5c0b61df1f2c9344edcbf32b2"
+      }
+    },
+    "contextcut": {
+      "package": {
+        "files": 7,
+        "source_bytes": 22480,
+        "zip_bytes": 11789,
+        "zip_sha256": "bfe4ec7511c36fb28f86a68d1928ee18de4e91b5c2ebd3c217e2be8b1aeec495",
+        "entry_sha256": "160f64c2deb921ad9ab8f109982174bb4d37da8d82d6953cb6781c2028383621"
+      },
+      "proposal": {
+        "substantive_words": 274,
+        "pdf_pages": 2,
+        "pdf_bytes": 7045,
+        "pdf_sha256": "64b9aecba3ee3ff66219bb573adc44ceb63b799804920256d9346984e30876f6"
+      }
+    },
+    "benchmatch": {
+      "package": {
+        "files": 7,
+        "source_bytes": 21133,
+        "zip_bytes": 11328,
+        "zip_sha256": "7ec5f5264ed35107328f847352c1c6d67714f659b0ff60cbc4fc21dac21d3fc4",
+        "entry_sha256": "481c3a690b5b8c4f8bbed544262df1bd1ec0926065af9b493d6122310e66bbe4"
+      },
+      "proposal": {
+        "substantive_words": 276,
+        "pdf_pages": 2,
+        "pdf_bytes": 7011,
+        "pdf_sha256": "567789380503952f9af7b6f381cbba0e83a4afb283aeb48a4f2b9c37e33647c9"
+      }
+    }
+  },
+  "local_markdown_links_checked": 112,
+  "archived_concepts": "exactly README.md and demo.html",
+  "official_creation_tool": "not used; archive download unavailable",
+  "official_catalog_bindings": "proposed; verification pending",
+  "official_checker": "not run",
+  "nas_runtime": "not run",
+  "remote_publication": "not verified"
+}

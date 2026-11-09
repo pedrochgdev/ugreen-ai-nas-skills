@@ -1,0 +1,73 @@
+[
+  {
+    "id": "F01",
+    "type": "demo-photo",
+    "people": [
+      "Diego",
+      "Lucia"
+    ],
+    "event": "beach"
+  },
+  {
+    "id": "F02",
+    "type": "demo-photo",
+    "people": [
+      "Diego",
+      "Sofia"
+    ],
+    "event": "beach"
+  },
+  {
+    "id": "F03",
+    "type": "demo-photo",
+    "people": [
+      "Diego"
+    ],
+    "event": "pier"
+  },
+  {
+    "id": "F04",
+    "type": "demo-photo",
+    "people": [
+      "Diego",
+      "Lucia"
+    ],
+    "event": "pier"
+  },
+  {
+    "id": "F05",
+    "type": "demo-photo",
+    "people": [
+      "Ana",
+      "Sofia"
+    ],
+    "event": "beach"
+  },
+  {
+    "id": "F06",
+    "type": "demo-photo",
+    "people": [
+      "Ana",
+      "Lucia"
+    ],
+    "event": "walk"
+  },
+  {
+    "id": "F07",
+    "type": "demo-photo",
+    "people": [
+      "Ana",
+      "Diego"
+    ],
+    "event": "walk"
+  },
+  {
+    "id": "F08",
+    "type": "demo-photo",
+    "people": [
+      "Lucia",
+      "Sofia"
+    ],
+    "event": "walk"
+  }
+]

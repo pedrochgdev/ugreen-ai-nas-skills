@@ -1,0 +1,6 @@
+{
+  "scope": "DOM initialization and local routes only; no browser screenshots or NAS execution",
+  "result": "passed",
+  "html_pages": 18,
+  "links_checked": 322
+}

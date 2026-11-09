@@ -1,0 +1,10 @@
+{
+  "official_page": "https://ai.ugreen.com/pages/hackathon-starter-kit",
+  "archive_url": "https://cdn.shopify.com/s/files/1/0630/9416/1602/files/uliya-skill-kit-0.7.3-en.zip?v=1790578898",
+  "downloaded": false,
+  "creation_tool_used": false,
+  "official_checker_run": false,
+  "last_download_result": "curl: Could not resolve host: cdn.shopify.com",
+  "web_archive_result": "Unsupported content-type: application/zip",
+  "scope": "Public guide consulted; exact catalog and official authoring checks remain a release blocker."
+}

@@ -1,0 +1,27 @@
+{
+  "questions": [
+    "What does the Skill do?",
+    "Target user and problem",
+    "Proposed solution",
+    "Core user flow",
+    "Substantive difference",
+    "UGREEN AI NAS capabilities",
+    "Technical approach",
+    "Current development status",
+    "Final validation plan",
+    "Known limitations"
+  ],
+  "answers": [
+    "ContextCut reviews draft interview quotations against authorized complete transcripts and prepares source-linked editorial warnings and alternatives.",
+    "Editors and small documentary teams need shorter scripts while preserving qualifications, negations and attribution in private, unpublished interviews.",
+    "Match each draft quotation to its actual source context, flag supported changes in apparent meaning and let the editor decide on a faithful alternative.",
+    "Select draft and transcripts; authorize scope and processing; review each quotation; accept, retain or leave unresolved; approve a separate report.",
+    "The workflow targets meaning lost during quotation selection, preserves unresolved attribution and records every editor decision alongside evidence.",
+    "File discovery establishes the source set and freshness; document lookup and reconciliation retrieve context; optional supported transcription adds evidence; approved text saving preserves the review.",
+    "A Markdown parent delegates to file, document and knowledge experts and reasons over actual returned passages. Inputs include draft, sources and speaker mapping. Proposed CLI bindings need official-kit verification. Confirm model routing before private reads; prefer a verified local route. No media editing or external API is included. Codex assisted development.",
+    "Implemented: complete workflow, review rules, references, synthetic transcripts, HTML concept demo, proposal and local package checks. Official-tool use and validation remain blocked by download access; NAS execution, extraction and permissions are untested. Entrant review is pending.",
+    "Core one: detect a removed shipping exception and negation with exact source context. Core two: preserve a faithful quote and invalidate approval after source changes. Edge: missing or ambiguous attribution must remain unverified without invented text or timestamps.",
+    "Semantic interpretation and transcription may be wrong; editorial review remains human. Locator availability depends on experts. The Skill produces reviewed text and never cuts, renders or publishes media."
+  ],
+  "word_count": 274
+}

@@ -1,0 +1,99 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 2108 >>
+stream
+0.09 0.30 0.23 rg 0 830 595 12 re f
+BT /F2 23 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 788 Tm (BenchMatch / Round 1 proposal) Tj ET
+BT /F1 11 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 765 Tm (Open Innovation) Tj ET
+BT /F1 8.8 Tf 0.45 0.30 0.08 rg 1 0 0 1 46 743 Tm (Authored candidate - official validation and NAS execution pending) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 714 Tm (1. What does the Skill do?) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 700 Tm (BenchMatch compares documented conditions of two prototype runs and preserves) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 686 Tm (differences, missing values and source conflicts in a reviewed report.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 659 Tm (2. Target user and problem) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 645 Tm (Makers and small workshops keep run notes in scattered files and often repeat a failed) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 631 Tm (test without knowing what changed.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 604 Tm (3. Proposed solution) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 590 Tm (Reconcile run-bound parameters and reported outcomes, expose gaps and prepare a) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 576 Tm (consistent recording checklist for the next test.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 549 Tm (4. Core user flow) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 535 Tm (Identify comparable runs and variables; authorize sources; inspect differences and) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 521 Tm (unknowns; add or clarify a note; approve the report.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 494 Tm (5. Substantive difference) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 480 Tm (The workflow preserves variable-level uncertainty and run identity instead of turning a) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 466 Tm (plausible explanation into an unsupported cause.) Tj ET
+BT /F1 8.2 Tf 0.35 0.42 0.38 rg 1 0 0 1 46 35 Tm (Substantive responses: 276 words | 2026-11-09 | 1/2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 3959 >>
+stream
+0.09 0.30 0.23 rg 0 830 595 12 re f
+BT /F2 23 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 788 Tm (BenchMatch / Round 1 proposal) Tj ET
+BT /F1 11 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 765 Tm (Open Innovation) Tj ET
+BT /F1 8.8 Tf 0.45 0.30 0.08 rg 1 0 0 1 46 743 Tm (Authored candidate - official validation and NAS execution pending) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 714 Tm (6. UGREEN AI NAS capabilities) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 700 Tm (File discovery establishes run sources; document extraction and reconciliation recover) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 686 Tm (values and units; optional supported transcription adds a note; approved text saving) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 672 Tm (preserves the comparison.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 645 Tm (7. Technical approach) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 631 Tm (A Markdown parent delegates to file, document and knowledge experts with actual source) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 617 Tm (results. Inputs include run identities, shared context, variables, units and explicit) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 603 Tm (tolerances. CLI bindings need official-kit verification. Confirm model routing before) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 589 Tm (private reads; prefer verified local processing. No equipment control, external API or) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 575 Tm (custom runtime is bundled. Codex assisted development.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 548 Tm (8. Current development status) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 534 Tm (Implemented: workflow, comparison rules, references, synthetic run records, HTML concept) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 520 Tm (demo, proposal and local package checks. Official-tool use and validation remain blocked) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 506 Tm (by download access. NAS execution, extraction, approvals and model routing are untested;) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 492 Tm (entrant review is pending.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 465 Tm (9. Final validation plan) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 451 Tm (Core one: identify temperature and lot changes while keeping missing humidity unknown.) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 437 Tm (Core two: incorporate a run-linked humidity note and retain conflicting temperatures.) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 423 Tm (Edge: incompatible units or unresolved run identity must prevent an unjustified) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 409 Tm (comparison.) Tj ET
+BT /F2 10.7 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 382 Tm (10. Known limitations) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 368 Tm (Incomplete records and extraction errors limit findings. Comparable differences do not) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 354 Tm (establish causality. Unit mappings require explicit support, and the workflow does not) Tj ET
+BT /F1 10.3 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 340 Tm (prescribe machine settings or certify an experiment.) Tj ET
+BT /F2 9 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 308 Tm (Third-party information \(excluded from substantive response limit\)) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 295 Tm (UGREEN tools/experts: UGREEN terms; no kit redistributed. No third-party runtime code, dataset or model) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 284 Tm (bundled. Separate demos: Rubik, SIL OFL 1.1. PDF creation: original Python standard-library code. Local) Tj ET
+BT /F1 8.6 Tf 0.10 0.18 0.15 rg 1 0 0 1 46 273 Tm (checks: pypdf, BSD-3-Clause; PyYAML, MIT. Sources and full disclosures accompany the Skill.) Tj ET
+BT /F1 8.2 Tf 0.35 0.42 0.38 rg 1 0 0 1 46 35 Tm (Substantive responses: 276 words | 2026-11-09 | 2/2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000002485 00000 n 
+0000002621 00000 n 
+0000006631 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+6767
+%%EOF

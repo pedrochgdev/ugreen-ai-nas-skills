@@ -1,0 +1,28 @@
+{
+  "checker": "Codex skill-creator generic frontmatter validator",
+  "scope": "Generic metadata only; not the UGREEN checker",
+  "checker_sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+  "result": "passed",
+  "products": {
+    "tacit": {
+      "returncode": 0,
+      "message": "Skill is valid!",
+      "error": ""
+    },
+    "off-camera": {
+      "returncode": 0,
+      "message": "Skill is valid!",
+      "error": ""
+    },
+    "contextcut": {
+      "returncode": 0,
+      "message": "Skill is valid!",
+      "error": ""
+    },
+    "benchmatch": {
+      "returncode": 0,
+      "message": "Skill is valid!",
+      "error": ""
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "result": "passed",
+  "tests": 40,
+  "scope": "Development-only policy models; no NAS or model execution",
+  "output": "........................................\n----------------------------------------------------------------------\nRan 40 tests in 0.001s\n\nOK"
+}

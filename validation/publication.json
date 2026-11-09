@@ -1,0 +1,11 @@
+{
+  "requested": true,
+  "intended_repository": "pedrochgdev/ugreen-ai-nas-skills",
+  "intended_visibility": "private",
+  "remote_creation_verified": false,
+  "remote_commit_verified": false,
+  "last_preflight": "gh repo view pedrochgdev/ugreen-ai-nas-skills --json nameWithOwner,url,isPrivate",
+  "last_result": "error connecting to api.github.com",
+  "github_integration_connection": "not confirmed",
+  "required_next_step": "Establish authenticated GitHub access and retry the verified publication flow."
+}
