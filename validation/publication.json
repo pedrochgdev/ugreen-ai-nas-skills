@@ -1,13 +1,20 @@
 {
   "requested": true,
   "intended_repository": "pedrochgdev/ugreen-ai-nas-skills",
-  "intended_visibility": "private",
-  "remote_creation_verified": false,
-  "remote_commit_verified": false,
-  "user_reports_authentication_completed": true,
-  "last_preflight": "gh api user --jq .login",
-  "last_result": "error connecting to api.github.com",
-  "dns_check": "api.github.com and github.com: Temporary failure in name resolution",
-  "github_integration_connection": "not confirmed",
-  "required_next_step": "Restore this session's network access, inspect the destination, then publish privately and verify visibility and the remote commit. Do not request another login solely on the basis of the connection failure."
+  "intended_visibility": "public",
+  "repository_url": "https://github.com/pedrochgdev/ugreen-ai-nas-skills",
+  "verified_on": "2026-11-09",
+  "authenticated_account": "pedrochgdev",
+  "actual_visibility": "PUBLIC",
+  "is_private": false,
+  "remote_creation_verified": true,
+  "remote_commit_verified": true,
+  "verified_content_commit": "8d7679cf8a523089b50db534506acca5698d9b94",
+  "verified_branch": "main",
+  "verification_commands": [
+    "gh api user --jq .login",
+    "gh repo view pedrochgdev/ugreen-ai-nas-skills --json nameWithOwner,url,visibility,isPrivate,defaultBranchRef",
+    "git rev-parse HEAD",
+    "git ls-remote origin refs/heads/main"
+  ]
 }

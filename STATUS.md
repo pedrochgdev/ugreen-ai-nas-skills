@@ -21,7 +21,7 @@ Snapshot: 2026-11-09.
 | Platform model route/locality and live permissions | Not verified |
 | Browser screenshots / visual acceptance | Not performed; browser launch blocked by sandbox sockets |
 | Entrant review, eligibility and declarations | Pending user review |
-| GitHub publication | User reports authenticated; session DNS cannot resolve GitHub; no remote verified |
+| GitHub publication | Published publicly at [pedrochgdev/ugreen-ai-nas-skills](https://github.com/pedrochgdev/ugreen-ai-nas-skills); visibility and main commit verified |
 | Devpost submission | Not performed |
 
 The candidates are authored alternatives with actual official static-check

@@ -40,8 +40,8 @@ Elige una de estas cuatro alternativas para la inscripción.
 
 ## Repositorio
 
-Este directorio está preparado como un único repositorio. El destino previsto es
-un repositorio privado nuevo en GitHub. Ya indicaste que completaste la
-autenticación, pero esta sesión no resuelve los servidores de GitHub y la subida
-sigue sin verificarse. Los pasos están en [PUBLISHING.md](PUBLISHING.md).
+El repositorio está publicado como público en
+[pedrochgdev/ugreen-ai-nas-skills](https://github.com/pedrochgdev/ugreen-ai-nas-skills).
+La visibilidad pública y el commit subido a main se verificaron el 2026-11-09.
+Los pasos para futuras actualizaciones están en [PUBLISHING.md](PUBLISHING.md).
 No se ha realizado ninguna inscripción ni publicación en Devpost.

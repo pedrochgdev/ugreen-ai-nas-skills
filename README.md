@@ -104,8 +104,7 @@ Third-party rights remain unchanged; see [THIRD_PARTY.md](THIRD_PARTY.md).
 All bundled source fixtures are fictional. No entrant identity, signature, consent
 declaration or Devpost submission has been invented or made on the user's behalf.
 
-Remote publication is separate from local preparation. The intended destination
-is a new private GitHub repository; [PUBLISHING.md](PUBLISHING.md) states the exact
-steps and the network blocker. The user reports authentication completed; this
-session cannot resolve GitHub hosts to verify it. No upload is claimed without
-a returned repository URL and verified remote commit.
+The repository is public on GitHub at
+[pedrochgdev/ugreen-ai-nas-skills](https://github.com/pedrochgdev/ugreen-ai-nas-skills).
+Public visibility and the uploaded main commit were verified on 2026-11-09.
+See [PUBLISHING.md](PUBLISHING.md) for publication and update instructions.
